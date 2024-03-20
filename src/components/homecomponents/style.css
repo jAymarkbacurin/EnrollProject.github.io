@@ -1,0 +1,22 @@
+/* Line hover styles */
+#line {
+    position: relative; /* Make the element position relative for pseudo-element positioning */
+}
+
+#line ::before {
+    content: "";
+    display: block;
+    width: 0; /* Set initial width to 0 */
+    height: 2px; /* Set height for the line */
+    background-color: rgb(255, 217, 0); /* Set the line color */
+    position: absolute; /* Make the pseudo-element absolute within the element */
+    left: 0; /* Position the left edge at the beginning */
+    bottom: 0; /* Position the bottom edge at the bottom */
+    transform-origin: left; /* Set transform origin to left edge */
+    transition: width 400ms ease-in-out; /* Set transition for smooth animation */
+}
+
+#line :hover::before {
+    width: 100%; /* Expand the line to 100% width on hover */
+}
+

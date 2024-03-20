@@ -1,0 +1,71 @@
+import { NavLink } from 'react-router-dom';
+import ImageLogo from './sliderimage/finallogo.png';
+
+
+
+const Footer = () => {
+    return ( 
+        <footer className=" h-[30rem] bg-gradient-to-r  from-blue-800 from-7% via-blue-900 via-30% to-blue-950 to-90%
+        ">
+        <section className='grid grid-cols-1 md:grid-cols-3 gap-5 text-white p-11 text-[1.1rem] font-para'>
+            <section className='md:justify-self-center'>
+                <div>
+                    <ul className='md:justify-self-center text-gray-400 font-medium '>
+                        <li>
+                            <a href=''> 
+                                <div className="flex items-center mb-3">
+                                    <img
+                                        width={90}
+                                        height={90}
+                                        src={ImageLogo} 
+                                    />
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <h1 >2024 DCCP</h1>
+                        </li>
+                        <li>
+                            <h1>All rights reserve</h1>
+                        </li>
+                        <li >
+                            <ul className='flex'>
+                                <li>f</li>
+                                <li>y</li>
+                                <li>i</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+           <section className='mt-[2rem]'>
+                <div >
+                        <h1 className='text-[1.9rem] font-bold'>Get in touch</h1>
+                  <NavLink>
+                        <p className='text-gray-400 mb-5'>118 Upper A. Bonifacio St.,Brgy. Holy Ghost Proper, Baguio City, Philippines</p>
+                  </NavLink> 
+                </div>
+                <div>
+                    <h1 className='text-[1.4rem] font-bold '>Message us via</h1>
+                    <p className='text-gray-400'>(074) 444 3539</p>
+                </div>
+           </section>
+
+           
+           <section className='mt-[2rem]'>
+                    <h1 className='text-[1.9rem] font-bold  mb-1'>Learn More</h1>
+                <NavLink>
+                    <h1 className='text-[1.1rem] font-semibold mb-1'>The Story of DCCP</h1>
+                </NavLink>
+                <NavLink>
+                    <h1 className='text-[1.1rem] font-semibold'>DCCP Facebook Page</h1>
+                </NavLink>
+           </section>
+
+        </section>
+        </footer>
+     );
+}
+ 
+export default Footer;
