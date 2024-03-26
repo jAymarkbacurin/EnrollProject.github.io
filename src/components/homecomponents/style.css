@@ -7,13 +7,13 @@
     content: "";
     display: block;
     width: 0; /* Set initial width to 0 */
-    height: 2px; /* Set height for the line */
-    background-color: rgb(255, 217, 0); /* Set the line color */
+    height: 1px; /* Set height for the line */
+    background-color: rgb(32, 9, 117); /* Set the line color */
     position: absolute; /* Make the pseudo-element absolute within the element */
     left: 0; /* Position the left edge at the beginning */
     bottom: 0; /* Position the bottom edge at the bottom */
-    transform-origin: left; /* Set transform origin to left edge */
-    transition: width 400ms ease-in-out; /* Set transition for smooth animation */
+  /* Set transform origin to left edge */
+   /* Set transition for smooth animation */
 }
 
 #line :hover::before {

@@ -3,16 +3,18 @@ import { NavLink } from "react-router-dom";
 import { IoMenu, IoClose, IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import ImageLogo from './sliderimage/finallogo.png';
-import { MdArrowDropDown } from "react-icons/md";
+import { TiArrowSortedDown } from "react-icons/ti";
 import { RiSearch2Line } from "react-icons/ri";
 
 
 const Header = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [smallDropdownOpen, setsmallDropdownOpen] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
     const dropdownRef = useRef(null);
+
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -26,6 +28,7 @@ const Header = () => {
             setDropdownOpen(false); // Close dropdown on resize
             setMenuOpen(false); // Close menu on resize
             setSearchOpen(false);
+            setsmallDropdownOpen(false);
         };
 
         document.addEventListener("mousedown", handleClickOutside);
@@ -40,7 +43,10 @@ const Header = () => {
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
     };
-
+    const toggleSmallDropdown = () => {
+        setsmallDropdownOpen(!smallDropdownOpen);
+    };
+ 
     const closeMenu = () => {
         setMenuOpen(false);
     };
@@ -60,7 +66,7 @@ const Header = () => {
 
     return (
         <header className='shadow-2xl '>
-            <div className=' p-2 bg-gradient-to-r  from-blue-800 from-7% via-blue-900 via-40% to-blue-950 to-80% 
+            <div className=' p-2 bg-blue-800
              grid hidden sm:grid lg:grid-cols-2 m-auto overflow-x-auto font-header'>
                 <div className=' flex  p-4  text-white justify-self-center '>
                     <IoLocationSharp  className='mr-[-38px]' />
@@ -94,18 +100,24 @@ const Header = () => {
 
     <ul className='text-gray-800  flex md:col-start-2 justify-self-center font-header' ref={dropdownRef}>
         <li className='relative flex'>
-            <li className='text-[16px] font-medium '>
-            <NavLink  className=' hidden  md:hidden lg:block mt-[21px] m-3 p-2 rounded-lg hover:text-blue-800' onClick={toggleDropdown}>Academics </NavLink>
-             </li>
+        <li className="flex text-[16px] font-medium">
+      <NavLink
+        className="hidden md:hidden lg:flex items-center mt-[21px] m-3 p-2 rounded-lg hover:text-blue-800"
+        onClick={toggleDropdown}
+        >
+        Academics
+        <TiArrowSortedDown  className=" text-blue-900 mt-[2px] text-[1.2rem] " />
+      </NavLink>
+    </li>
 
                         
             {/* Dropdown Content */}
            <div className={`absolute  lg:p-5 top-full mt-4 ml-[-9rem] w-[15rem] bg-white sm:w-[20rem] lg:w-[34rem] z-40 rounded-md shadow-lg ${dropdownOpen ? '' : 'hidden'}`}>
-                <NavLink to="/courses" className='block px-4 py-2 text-blue-800 font-semibold font-semititle'>UNDERGRADUATE PROGRAMMES</NavLink>
+                <NavLink to="/academics" className='block px-4 py-2 text-blue-800 font-semibold font-semititle'>UNDERGRADUATE PROGRAMMES</NavLink>
                 <hr className="border-gray-300 my-2"/>
-                <NavLink to="/courses" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>(BSIT) Bachelor of Science in Information Technology</NavLink>
-                <NavLink to="/courses" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>(BSHM) Bachelor of Science in Hotel Management</NavLink>
-                <NavLink to="/courses" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>(BSBA) Bachelor of Science in Business Administration</NavLink>
+                <NavLink to="/academics#information-technology" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>(BSIT) Bachelor of Science in Information Technology</NavLink>
+                <NavLink to="/academics#hotel-management" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>(BSHM) Bachelor of Science in Hotel Management</NavLink>
+                <NavLink to="/academics#business-administration" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>(BSBA) Bachelor of Science in Business Administration</NavLink>
             </div>
         </li>
         <li className='text-[16px] font-medium hover:text-blue-800'>
@@ -143,19 +155,30 @@ const Header = () => {
     
 </div>
 {/* smaller screen menu */}
- <div className={`fixed z-30 h-full w-screen lg:hidden  top-0 right-0 ${menuOpen ? '' : 'hidden'}`}>
+<div className={`fixed z-30 h-full w-screen lg:hidden  top-0 right-0 ${menuOpen ? '' : 'hidden'}`}>
                 <div className='text-white font-title flex-col bg-gray-900/80 backdrop-blur-lg absolute right-0 top-0 h-screen p-8 gap-8 z-50 flex w-screen'>
                     <IoClose className='text-[40px] font-bold cursor-pointer' onClick={closeMenu} />
-                    <ul  className='relative text-[1.7rem]'>
-                        <li>
-                            <NavLink  onClick={toggleDropdown}>PROGRAMMES</NavLink>
+                    <ul className='relative text-[2rem]'>
+                        {/* Toggle dropdown for programmes */}
+                        <li onClick={toggleSmallDropdown}>
+                            <span className='cursor-pointer'>Academics</span>
+                            {smallDropdownOpen && (
+                                <ul className="absolute top-0 ml-[3rem] p-2 mt-9 bg-white rounded-md shadow-l text-gray-800 text-[1rem]">
+                                    {/* Dropdown items for programmes */}
+                                    <NavLink to="/courses" className='block px-4 py-2 text-blue-800 font-semibold font-semititle'>UNDERGRADUATE PROGRAMMES</NavLink>
+                                      <hr className="border-gray-300 my-2"/>
+                                      <NavLink to="/courses" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-meduim'>(BSIT) Bachelor of Science in Information Technology</NavLink>
+                                      <NavLink to="/courses" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-meduim'>(BSHM) Bachelor of Science in Hotel Management</NavLink>
+                                      <NavLink to="/courses" className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-meduim'>(BSBA) Bachelor of Science in Business Administration</NavLink>
+                                    {/* Add more dropdown items as needed */}
+                                </ul>
+                            )}
                         </li>
-                        <li><NavLink to="/programmes/category1" >ABOUT</NavLink></li>
-                        <li><NavLink to="/programmes/category1" >CONNECT</NavLink></li>
+                        <li><NavLink to="/about">About</NavLink></li>
+                        <li><NavLink to="/connect">Connect</NavLink></li>
                     </ul>
                 </div>
             </div>
-
                 
         </header>
     );

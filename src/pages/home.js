@@ -3,6 +3,7 @@ import Footer from "../components/asset/footer";
 import Slider  from "../components/homecomponents/slider";
 import  Learning from "../components/homecomponents/learning mv";
 import CardNews from "../components/homecomponents/cardsNews";
+import Maps from "../components/homecomponents/maps";
 
 
 
@@ -14,6 +15,7 @@ const Home = () => {
         <Slider />
         <Learning />
         <CardNews />
+        <Maps />
 
         <Footer />
         

@@ -8,13 +8,13 @@ import Olive from './image/OLIVE.png';
 const Learning = () => {
     return (  
 
-<div className='mt-11  '>
-        <section className='grid my-[5rem]  lg:grid-cols-1   xl:grid-cols-2 mx-[1rem] md:mx-[3rem]  xl:mx-[5rem] 2xl:mx-[15rem] justify-self-center ' >
+<div className='mt-11 '>
+        <section className='grid my-[5rem]  lg:grid-cols-1   xl:grid-cols-2 mx-[1rem] md:mx-[3rem]  xl:mx-[2rem] 2xl:mx-[11rem] justify-self-center ' >
             <div className='p-4 '>
-                    <h1 className='md:text-[3rem] text-[2rem] mb-1 ml-8 font-title text-blue-900'>
-                         Learning for the Future
+                    <h1 className='md:text-[3rem] text-[3rem]  ml-8 font-title text-blue-900'>
+                            Future-Oriented Education
                     </h1>
-                  <section className='text-[1.3rem] p-6 md:ml-2 md:text-[1.6rem] font-para md:text-left text-gray-600'> 
+                  <section className='text-[1.3rem] p-6 md:ml-7 md:text-[1.6rem] font-para md:text-left text-gray-600'> 
                         <p className='md:mb-4 mb-1'>  At DCCP, we're dedicated to fostering a community of learners,
                             thinkers, and leaders. Our commitment to academic excellence, innovation, 
                             and inclusivity sets us apart as a hub for knowledge and discovery.</p>
@@ -44,8 +44,8 @@ const Learning = () => {
                             />
                     </div> 
                     <div className='flex justify-center '>
-                       <button className='transform transition-all hover:scale-110 hover:text-blue-800 '>
-                                <NavLink className=' border-4 p-5 border-white text-white
+                       <button className='align-center  transform transition-all hover:scale-110 hover:text-blue-800 '>
+                                <NavLink to='/academics' className=' border-4 p-5 border-white text-white
                             rounded-full font-bold font-semititle  hover:text-blue-800 hover:bg-white' >
                                     Start your DCCP Journey
                                 </NavLink>
@@ -59,8 +59,7 @@ const Learning = () => {
 {/* mv */}
   <div className=' w-full mt-9 flex justify-center items-center' style={{backgroundImage: `url(${Olive})`}}>
  
-        <section className=' grid my-[5rem] lg:my-[10rem] grid-cols-1  lg:grid-cols-2  xl:grid-cols-3 xl:mx-[8rem]
-         2xl:mx-[15rem] mx-[2rem] md:mx-[6rem] gap-4 p-3 '>
+        <section className=' grid my-[5rem] lg:my-[10rem] grid-cols-1  lg:grid-cols-2  xl:grid-cols-3 mx-9 2xl:mx-[11rem] gap-4 p-3 '>
             {/* First Row */}
             <div className=' md:p-11 p-9  font-para border-[6px] border-solid border-blue-800 
              bg-blue-800 overflow-hidden transform transition-all hover:scale-105 text-white

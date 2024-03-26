@@ -1,15 +1,17 @@
 import Header  from "../components/asset/header";
 import Footer from "../components/asset/footer";
+import Courses from "../components/academicscomponents/courses";
 
 
-const Courses = () => {
+const Academics = () => {
     return ( 
         <>
         <Header />
-        <h1>courses</h1>
+        <Courses/>
+      
         <Footer />
         </>
      );
 }
  
-export default Courses;
+export default Academics;

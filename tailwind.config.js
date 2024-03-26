@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage:{
+        'parallax': 'url("../public/graduate.jpg")',
+
+      },
       boxShadow: {
         '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
@@ -10,7 +14,7 @@ module.exports = {
         'title': ['Gloock', 'sans-serif'],
         'semititle': ['Montserrat', 'sans-serif'],
         'header': ['Kodchasan', 'sans-serif'],
-        'para': ['Hind Guntur', 'sans-serif'],
+        'para': ['Wix Madefor Text', 'sans-serif'],
 
       }
     },
