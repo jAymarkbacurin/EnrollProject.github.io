@@ -29,7 +29,7 @@ const cards = [
 
 const App = () => {
   return (
-    <div className=''>
+    <div className=' md:mx-[1rem] 2xl:mx-[10rem]'>
         <div class="container mx-auto my-[6rem] ">
             <div class="grid grid-cols-1 md:grid-cols-2 w-full mb-3 p-3 mx-5   ">
                 <hr class="w-[60rem]  my-8  border-0 " />

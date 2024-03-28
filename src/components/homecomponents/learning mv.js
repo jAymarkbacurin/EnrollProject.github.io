@@ -8,13 +8,13 @@ import Olive from './image/OLIVE.png';
 const Learning = () => {
     return (  
 
-<div className='mt-11 '>
-        <section className='grid my-[5rem]  lg:grid-cols-1   xl:grid-cols-2 mx-[1rem] md:mx-[3rem]  xl:mx-[2rem] 2xl:mx-[11rem] justify-self-center ' >
+<div className='lg:mt-11 mt-3 '>
+        <section className='grid lg:my-[5rem]  lg:grid-cols-1   xl:grid-cols-2 mx-[1rem] md:mx-[3rem]  xl:mx-[2rem] 2xl:mx-[8rem] justify-self-center ' >
             <div className='p-4 '>
                     <h1 className='md:text-[3rem] text-[3rem]  ml-8 font-title text-blue-900'>
                             Future-Oriented Education
                     </h1>
-                  <section className='text-[1.3rem] p-6 md:ml-7 md:text-[1.6rem] font-para md:text-left text-gray-600'> 
+                  <section className='text-[1.3rem] p-6 md:ml-4 md:text-[1.6rem] font-para md:text-left text-gray-600'> 
                         <p className='md:mb-4 mb-1'>  At DCCP, we're dedicated to fostering a community of learners,
                             thinkers, and leaders. Our commitment to academic excellence, innovation, 
                             and inclusivity sets us apart as a hub for knowledge and discovery.</p>

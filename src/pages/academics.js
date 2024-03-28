@@ -4,6 +4,7 @@ import Courses from "../components/academicscomponents/courses";
 
 
 const Academics = () => {
+    
     return ( 
         <>
         <Header />
