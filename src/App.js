@@ -6,6 +6,7 @@ import About from './pages/about'
 import Connect from './pages/connect'
 import NoPage from './pages/noPage'
 import Academics from './pages/academics'
+import BSBA from './pages/bsba'
 import News from './pages/news'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/home' element={<Home/>}/>
           <Route path='/academics' element={<Academics/>}/>
+          <Route path='/bsba' element={<BSBA/>}/>
           <Route path='/connect' element={<Connect/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/news' element={<News/>}/>

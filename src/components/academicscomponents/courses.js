@@ -2,14 +2,19 @@ import React, { useState, useEffect } from 'react';
 import './stylee.css';
 import { LiaBookSolid } from "react-icons/lia";
 import { LuFiles } from "react-icons/lu";
+import { FaCircleArrowRight } from "react-icons/fa6";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import { FaBook } from "react-icons/fa";
 import ImageLogo from './image/finallogo.png';
+import ChedLogo from './image/chedlogo.png';
 import BA from "./image/BA.jpg";
 import HM from "./image/HM.jpg";
 import IT from "./image/IT.jpg";
-import { FaBook } from "react-icons/fa";
+
 
 
 import { BsDot } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 
 const Courses = () => {
   const [isOpenBA, setIsOpenBA] = useState(false);
@@ -33,13 +38,16 @@ const Courses = () => {
   };
   
   const iconSize = 20;
+  const iconSize1 = 35 ;
   const boxSizeBA1 = isOpenBA ? 'md:w-[30rem]  h-[7rem]' : 'md:w-[30rem] h-[5rem] md:h-[4rem]'; 
   const boxSizeIT = isOpenIT ? 'md:w-[30rem] h-[8rem]' : 'md:w-[30rem] h-[5rem] md:h-[4rem]'; 
   
 
   return (  
+   
 
     <div className='bg-gray-100'>
+      
 {/* top*/} 
       <section className='w-full h-[38rem] relative top-0'>
         <div className="bg-parallax bg-fixed absolute inset-0 bg-cover brightness-50 "></div>
@@ -56,39 +64,57 @@ const Courses = () => {
         </div>
       </section>
 {/* -top*/} 
-    
+      <section className='flex items-center justify-start sm:ml-[2rem] 3xl:ml-[14rem] xl:ml-[10rem] my-11'>
+        <img
+          src={ChedLogo} 
+          width={90} 
+          height={90}
+          alt="Final Logo"
+          className='mr-1'
+        />
+        <h1 className='font-title text-[3rem] text-gray-800 lg:text-[5rem]'>CHED COURSES</h1>
+      </section>
+
 
 {/* courses*/}  
-      <section  className="flex md:mx-[3rem] xl:mx-[10rem] mt-[8rem] 3xl:mx-[15rem]">
+      <section  className="flex md:mx-[3rem] xl:mx-[10rem]  3xl:mx-[15rem]">
        
            <section className="flex-grow flex-col p-1 ">
 {/* BSBA*/}
 
-              <section id='bsba'  className="justify-center relative mb-11 ">
+              <section id='bsba'  className="justify-center relative mb-14 ">
 {/* BSBA image*/}       
-                <section id='business-administration'>
-                      <div class="relative group w-full  md:h-[25rem] overflow-hidden bg-black rounded-2xl">
-                            <img class="object-cover w-full h-full brightness-50 " src={BA} />    
-                            <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
-                        <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
-                            <div class="absolute w-full flex place-content-center mt-10">
-                                <p  class="capitalize font-serif font-bold text-base text-center shadow-2xl text-white mt-15 text-[25px]">BSBA</p>
-                            </div>
-                            <div class="absolute w-full flex place-content-center mt-20">
-                                <p class="font-para text-center w-4/5 text-white mt-10 md:text-[22px]">
-                                The Bachelor of Science in Business Administration (BSBA) is a four-year program which provides 
-                                professional business and management education for those who would like to become entrepreneurs
-                              or pursue a career in any field of business such as economics, finance, human capital management, and marketing.</p>
-                            </div>
-                        </div> 
-                      </div>
-                    <div className='absolute h-14 w-14 -left-4 -top-4 bg-blue-800  flex justify-center items-center mx-3 md:mx-0'>
-                          <h1 className='text-white text-[1.2rem] font-title tracking-wider '>BA</h1>
-                    </div>
-                </section>
+              <section id='business-administration'>
+                  <div class="relative group w-full  md:h-[25rem] overflow-hidden bg-black rounded-2xl">
+                      <img class="object-cover w-full h-full brightness-50 " src={BA} />    
+                      <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+                      <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
+                          <div class="absolute w-full flex place-content-center mt-10">
+                              <p class="capitalize font-serif font-bold text-base text-center shadow-2xl text-white mt-15 text-[26px]">BSBA</p>
+                          </div>
+                          <div class="absolute w-full flex place-content-center mt-20">
+                              <p class="font-para text-center w-4/5 text-white sm:mt-10 text-[12px] sm:text-[22px]">
+                                  The Bachelor of Science in Business Administration (BSBA) is a four-year program which provides 
+                                  professional business and management education for those who would like to become entrepreneurs
+                                  or pursue a career in any field of business such as economics, finance, human capital management, and marketing.
+                              </p>
+                          </div>
+                          <div class="absolute w-full bottom-11 flex justify-center text-white cursor-pointer ">
+                            <span className='flex justify-center  p-1 hover:text-blue-500  text-white '>
+                              <h1 id='lineW' className='sm:text-[1.1rem] font-semititle font-semibold mt-[3px] text-white'>Learn More</h1>
+                              <FaCircleArrowRight  className='ml-2   'size={iconSize1} />
+                            </span>
+                          </div> 
+                      </div>    
+                     </div>
+                  <div className='absolute h-14 w-14 -left-4 -top-4 bg-blue-800  flex justify-center items-center mx-3 md:mx-0'>
+                      <h1 className='text-white text-[1.2rem] font-title tracking-wider '>BA</h1>
+                  </div>
+              </section>
+
 {/* -image*/} 
 {/*  card*/} 
-              <div className=' p-2 md:p-9 font-semititle   md:[1rem] '>
+              <div className=' p-2 md:px-9  md:mt-3 font-semititle   md:[1rem] '>
                 <div className={`bg-white p-4 border-[1px] rounded-lg border-gray-300 transition-all duration-300 ease-in-out ${boxSizeBA1}`}>
                   <h1  className='flex cursor-pointer font-semibold hover:text-blue-800 text-gray-700' onClick={toggleDropdownBA}>
                     <FaBook className='mr-1 mt-1 ' />
@@ -102,13 +128,21 @@ const Courses = () => {
                 )}
                 </div>
               </div>
+              <div class="ml-9 w-full bottom-11 flex  text-gray-800 cursor-pointer ">
+                   <span className='flex justify-center  p-1 hover:text-blue-700  text-gray-700  '> 
+                   <BsArrowRightCircleFill  className='mr-3  'size={iconSize1} />
+                    <h1  className='text-[1.1rem] font-semititle font-meduim  mt-[5px] text-gray-800 hover:text-blue-700 '>Enroll Now</h1>
+                   
+                  </span>
+               </div> 
+
 {/* -card*/} 
             </section>
 {/* BSBA*/}
 
 
 {/* BSIT */}
-          <section id='bsit' className="justify-center relative mb-11"> 
+          <section id='bsit' className="justify-center relative mb-14"> 
 {/*  image*/}
                 <section >
                   <div class="relative group w-full md:h-[25rem] overflow-hidden bg-black rounded-2xl">
@@ -116,15 +150,21 @@ const Courses = () => {
                         <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
                     <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
                         <div class="absolute w-full flex place-content-center mt-10">
-                            <p class="capitalize font-serif font-bold text-base text-center shadow-2xl text-white mt-15 text-[25px]">BSIT</p>
+                            <p class="capitalize font-serif font-bold text-base text-center shadow-2xl text-white mt-15 text-[26px]">BSIT</p>
                         </div>
                         <div class="absolute w-full flex place-content-center mt-20">
-                            <p class="font-para text-center w-4/5 text-white mt-10 md:text-[22px]">
+                            <p class="font-para text-center w-4/5 text-white sm:mt-10 text-[12px] sm:text-[22px]">
                               The Bachelor of Science in Information Technology (BSIT) program
                               is a four-year degree program which focuses on the study of computer
                               utilization and computer software to plan, install, customize, operate,
                               manage, administer and maintain information technology infrastructure.</p>
                         </div>
+                        <div class="absolute w-full bottom-11 flex justify-center text-white cursor-pointer ">
+                            <span className='flex justify-center  p-1 hover:text-violet-500  text-white '>
+                              <h1 id='lineW' className='text-[1.1rem] font-semititle font-semibold mt-[3px] text-white'>Learn More</h1>
+                              <FaCircleArrowRight  className='ml-2   'size={iconSize1} />
+                            </span>
+                        </div> 
                       
                     </div> 
                   </div>  <div className='absolute h-14 w-14 -left-4 -top-4 bg-violet-800 z-10 flex justify-center items-center mx-3 md:mx-0'>
@@ -134,7 +174,7 @@ const Courses = () => {
 {/* -image*/}
 
 {/*  card*/}
-          <div className='p-2 md:p-9 font-semititle '>
+          <div className='p-2 md:px-9  md:mt-3 font-semititle '>
             <div className={`bg-white p-4 border-[1px] rounded-lg border-gray-300 transition-all duration-300 ease-in-out ${boxSizeIT}`}>
               <h1  className='flex cursor-pointer font-semibold hover:text-violet-800 text-gray-700' onClick={toggleDropdownIT}>
                 <FaBook className='mr-1 mt-1 ' />
@@ -153,6 +193,13 @@ const Courses = () => {
               )}
             </div>
           </div>
+          <div class="ml-9 w-full bottom-11 flex  text-gray-800 cursor-pointer ">
+                   <span className='flex justify-center  p-1 hover:text-blue-700  text-gray-700  '> 
+                   <BsArrowRightCircleFill  className='mr-3  'size={iconSize1} />
+                    <h1  className='text-[1.1rem] font-semititle font-meduim  mt-[5px] text-gray-800 hover:text-blue-700 '>Enroll Now</h1>
+                   
+                  </span>
+               </div> 
 {/* -card*/}
           </section>
 {/* BSIT */}
@@ -160,7 +207,7 @@ const Courses = () => {
 
 
  {/* BSHM*/}
-        <section id='bshm' className="justify-center relative mb-11">
+        <section id='bshm' className="justify-center relative mb-14">
  {/* image*/}
               <section >
                 <div class="relative group w-full md:h-[25rem] overflow-hidden bg-black rounded-2xl ">
@@ -168,15 +215,21 @@ const Courses = () => {
                       <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
                   <div class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
                       <div class="absolute w-full flex place-content-center mt-10">
-                          <p class="capitalize  font-bold text-base text-center shadow-2xl text-white mt-15 font-title tracking-widest text-[25px]">BSHM</p>
+                          <p class="capitalize font-serif font-bold text-base text-center shadow-2xl text-white mt-15  text-[26px]">BSHM</p>
                       </div>
                       <div class="absolute w-full flex place-content-center mt-20">
-                          <p class="font-para text-center w-4/5 text-white mt-10 md:text-[22px]">
+                          <p class="font-para text-center w-4/5 text-white sm:mt-10 text-[12px] sm:text-[22px]">
                           The Bachelor of Science in Hospitality Management (BSHM) is a four-year 
                           degree program that covers the process of planning,development, human resource 
                           management of the different aspects of the hotel, restaurant, and resorts operations. 
                           The program also intends to teach entrepreneurship skills..</p>
                       </div>
+                      <div class="absolute w-full bottom-11 flex justify-center text-white cursor-pointer ">
+                            <span className='flex justify-center  p-1 hover:text-yellow-500  text-white '>
+                             <NavLink to='/bsba'> <h1 id='lineW' className='text-[1.1rem] font-semititle font-semibold mt-[3px] text-white'>Learn More</h1></NavLink>
+                              <FaCircleArrowRight  className='ml-2   'size={iconSize1} />
+                            </span>
+                        </div> 
                   </div> 
                 </div>
                   <div className='absolute h-14 w-14 -left-4 -top-4 bg-yellow-500 flex justify-center items-center mx-3 md:mx-0'>
@@ -185,7 +238,7 @@ const Courses = () => {
               </section>
 {/* -image*/}
 {/*  card*/}
-          <div className='p-2 md:p-9   font-semititle '>
+          <div className='p-2 md:px-9  md:mt-3  font-semititle '>
             <div className={`bg-white p-4 border-[1px] rounded-lg border-gray-300 transition-all duration-300 ease-in-out md:w-[30rem] h-[5rem] md:h-[4rem]`}>
               <h1 className='flex cursor-pointer font-semibold hover:text-yellow-500 text-gray-700' >
                 <FaBook className='mr-1 mt-1 ' />
@@ -193,6 +246,13 @@ const Courses = () => {
               </h1> 
             </div>
           </div>
+          <div class="ml-9 w-full bottom-11 flex  text-gray-800 cursor-pointer ">
+                   <span className='flex justify-center  p-1 hover:text-blue-700  text-gray-700  '> 
+                   <BsArrowRightCircleFill  className='mr-3  'size={iconSize1} />
+                    <h1  className='text-[1.1rem] font-semititle font-meduim  mt-[5px] text-gray-800 hover:text-blue-700 '>Enroll Now</h1>
+                   
+                  </span>
+               </div> 
 {/*  -card*/}
           </section>
 {/* BSHM*/}
@@ -256,7 +316,7 @@ const Courses = () => {
 
       </section>
 
-      <aside className="w-full  lg:hidden  block">
+      <aside className="w-full  lg:hidden  block py-6">
                 
                   <div>
                     <h1 className='flex items-center justify-center font-title text-[2rem] tracking-wide text-gray-700'>REQUIREMENTS</h1>
