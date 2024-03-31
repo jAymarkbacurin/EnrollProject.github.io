@@ -7,14 +7,15 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 import { FaBook } from "react-icons/fa";
 import ImageLogo from './image/finallogo.png';
 import ChedLogo from './image/chedlogo.png';
-import BA from "./image/BA.jpg";
-import HM from "./image/HM.jpg";
-import IT from "./image/IT.jpg";
+import BA from "./subjectsimages/BAimage/BA.jpg";
+import HM from "./subjectsimages/HMimage/HM.jpg";
+import IT from "./subjectsimages/ITimage/IT.jpg";
 
 
 
 import { BsDot } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Courses = () => {
   const [isOpenBA, setIsOpenBA] = useState(false);
@@ -32,9 +33,12 @@ const Courses = () => {
 
   // Calculate the margin top for the content below the dropdown
  
-  const contentMarginTopIT = {
-    marginTop: isOpenIT ? "4rem" : "0",
-    transition: "margin-top 0.3s ease-in-out"
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   };
   
   const iconSize = 20;
@@ -100,10 +104,10 @@ const Courses = () => {
                               </p>
                           </div>
                           <div class="absolute w-full bottom-11 flex justify-center text-white cursor-pointer ">
-                            <span className='flex justify-center  p-1 hover:text-blue-500  text-white '>
+                            <NavLink to='/bsba ' onClick={scrollToTop}><span className='flex justify-center  p-1 hover:text-blue-500  text-white '>
                               <h1 id='lineW' className='sm:text-[1.1rem] font-semititle font-semibold mt-[3px] text-white'>Learn More</h1>
                               <FaCircleArrowRight  className='ml-2   'size={iconSize1} />
-                            </span>
+                            </span></NavLink>
                           </div> 
                       </div>    
                      </div>
@@ -121,10 +125,10 @@ const Courses = () => {
                     Bachelor of Science in Business Administration
                   </h1> 
                 {isOpenBA && (
-                    <div className="absolute ml-11  py-2 ">
+                   <HashLink  smooth to='/bsba/#bsbaM' > <div className="absolute ml-11  py-2 ">
                       <a id='line' href="#" className=" font-semititle font-semibold flex text-blue-800 ">
                         <BsDot  className='mt-[2px] mr-3 'size={iconSize}/>Major in Financial Management</a>
-                    </div>
+                    </div></HashLink>
                 )}
                 </div>
               </div>
@@ -160,10 +164,10 @@ const Courses = () => {
                               manage, administer and maintain information technology infrastructure.</p>
                         </div>
                         <div class="absolute w-full bottom-11 flex justify-center text-white cursor-pointer ">
-                            <span className='flex justify-center  p-1 hover:text-violet-500  text-white '>
+                           <NavLink to='/bsit' onClick={scrollToTop}> <span className='flex justify-center  p-1 hover:text-violet-500  text-white '>
                               <h1 id='lineW' className='text-[1.1rem] font-semititle font-semibold mt-[3px] text-white'>Learn More</h1>
                               <FaCircleArrowRight  className='ml-2   'size={iconSize1} />
-                            </span>
+                            </span></NavLink>
                         </div> 
                       
                     </div> 
@@ -182,11 +186,11 @@ const Courses = () => {
               </h1> 
            
               {isOpenIT && (
-                <div className="absolute ml-11 py-2 ">
-                  <a href="#" id='lineB' className=" font-semititle font-semibold flex text-violet-800"> 
-                    <BsDot className='mt-1 mr-3'/>Major in Web Development</a>
-                    <a href="#" id='lineB' className=" font-semititle font-semibold flex text-violet-800 mt-1">
-                    <BsDot className='mt-1 mr-3'/>Major in Mobile Development</a>
+               <div className="absolute ml-11 py-2 ">
+                 <HashLink  smooth to='/bsit/#bsitMW'>  <a href="#" id='lineB' className=" font-semititle font-semibold flex text-violet-800"> 
+                    <BsDot className='mt-1 mr-3'/>Major in Web Development</a></HashLink>
+                    <HashLink  smooth to='/bsit/#bsitMA'> <a href="#" id='lineB' className=" font-semititle font-semibold flex text-violet-800 mt-1">
+                    <BsDot className='mt-1 mr-3'/>Major in Mobile Development</a></HashLink>
                 
                 </div>
               
@@ -225,10 +229,12 @@ const Courses = () => {
                           The program also intends to teach entrepreneurship skills..</p>
                       </div>
                       <div class="absolute w-full bottom-11 flex justify-center text-white cursor-pointer ">
-                            <span className='flex justify-center  p-1 hover:text-yellow-500  text-white '>
-                             <NavLink to='/bsba'> <h1 id='lineW' className='text-[1.1rem] font-semititle font-semibold mt-[3px] text-white'>Learn More</h1></NavLink>
-                              <FaCircleArrowRight  className='ml-2   'size={iconSize1} />
-                            </span>
+                          <NavLink to='/bshm' onClick={scrollToTop}>
+                                <span className='flex justify-center  p-1 hover:text-yellow-500  text-white '>
+                                  <h1 id='lineW' className='text-[1.1rem] font-semititle font-semibold mt-[3px] text-white'>Learn More</h1>
+                                  <FaCircleArrowRight  className='ml-2   'size={iconSize1} />
+                                </span>
+                          </NavLink>
                         </div> 
                   </div> 
                 </div>
@@ -240,10 +246,10 @@ const Courses = () => {
 {/*  card*/}
           <div className='p-2 md:px-9  md:mt-3  font-semititle '>
             <div className={`bg-white p-4 border-[1px] rounded-lg border-gray-300 transition-all duration-300 ease-in-out md:w-[30rem] h-[5rem] md:h-[4rem]`}>
-              <h1 className='flex cursor-pointer font-semibold hover:text-yellow-500 text-gray-700' >
-                <FaBook className='mr-1 mt-1 ' />
+              <NavLink to='/bshm' onClick={scrollToTop}> <h1 className='flex cursor-pointer font-semibold hover:text-yellow-500 text-gray-700' >
+               <FaBook className='mr-1 mt-1 ' />
                 Bachelor of Science in Hospitality Management
-              </h1> 
+              </h1> </NavLink>
             </div>
           </div>
           <div class="ml-9 w-full bottom-11 flex  text-gray-800 cursor-pointer ">

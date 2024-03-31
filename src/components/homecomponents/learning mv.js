@@ -61,8 +61,8 @@ const Learning = () => {
  
         <section className=' grid my-[5rem] lg:my-[10rem] grid-cols-1  lg:grid-cols-2  xl:grid-cols-3 mx-9 2xl:mx-[11rem] gap-4 p-3 '>
             {/* First Row */}
-            <div className=' md:p-11 p-9  font-para border-[6px] border-solid border-blue-800 
-             bg-blue-800 overflow-hidden transform transition-all hover:scale-105 text-white
+            <div className=' md:p-11 p-9  font-para border-[6px] border-solid border-blue-900 
+             bg-blue-900 overflow-hidden transform transition-all hover:scale-105 text-white
              hover:text-violet-800 hover:border-violet-800 shadow-3xl hover:rounded-3xl hover:bg-white'>
                 <h1 className=' md:text-[1.6rem] text-[1rem]  mb-4 font-title'>
                     Undergraduate Programmes</h1>
@@ -89,7 +89,7 @@ const Learning = () => {
             {/* Second Row */}
            
             <div className=' p-9  border-[6px] font-para border-solid text-white
-              border-blue-800  bg-blue-800 hover:rounded-3xl shadow-3xl overflow-hidden
+              border-blue-900  bg-blue-900 hover:rounded-3xl shadow-3xl overflow-hidden
                transform transition-all hover:scale-105 hover:text-yellow-500 hover:border-yellow-400 hover:bg-white'>
                 <h1 className='md:text-[1.7rem]  font-title '>Our Mission</h1>
                 <p className='mt-1 ml-4 text-[14px] md:text-[1rem]  hover:text-yellow-500 text-justify'> 
@@ -101,7 +101,7 @@ const Learning = () => {
             </div>
             
              {/* Third Row */}
-            <div className='hover:bg-white text-white p-9 font-para border-[6px] border-solid border-blue-800  bg-blue-800
+            <div className='hover:bg-white text-white p-9 font-para border-[6px] border-solid border-blue-900  bg-blue-900
              hover:rounded-3xl overflow-hidden transform transition-all hover:scale-105 hover:text-blue-800
               hover:border-blue-800 shadow-3xl'>
                 <h1 className='md:text-[1.7rem] font-title '>Our Vision</h1>

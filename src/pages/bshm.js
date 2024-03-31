@@ -1,18 +1,18 @@
 import Header  from "../components/asset/header";
 import Footer from "../components/asset/footer";
 
-import BSBA from "../components/academicscomponents/COURSES/bsbacourse";
+import BSHM from "../components/academicscomponents/COURSES/bshmcourse";
 
 
-const Bsba = () => {
+const Bshm = () => {
     
     return ( 
         <>
         <Header />
-        <BSBA/>
+        <BSHM/>
         <Footer />
         </>
      );
 }
  
-export default  Bsba;
+export default  Bshm;

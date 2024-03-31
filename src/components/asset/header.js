@@ -79,8 +79,8 @@ const Header = () => {
 
     return (
         <header className='shadow-2xl '>
-            <div className=' p-2 bg-blue-800
-             grid hidden sm:grid lg:grid-cols-2 m-auto overflow-x-auto font-header'>
+            <div className=' p-2 bg-blue-900
+           hidden sm:grid lg:grid-cols-2 m-auto overflow-x-auto font-header'>
                 <div className=' flex  p-4  text-white justify-self-center '>
                     <IoLocationSharp  className='mr-[-38px]' />
                     <NavLink className='mx-11 text-[10px]  md:text-[13px] text-left '>118 Upper A. Bonifacio St.,Brgy. Holy Ghost Proper, Baguio City, Philippines</NavLink>

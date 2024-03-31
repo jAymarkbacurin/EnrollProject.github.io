@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'parallax': 'url("../public/graduate.jpg")',
+        'parallax': 'url("../public/imageparallax/graduate.jpg")',
+        'parallax1hm': 'url("../public/imageparallax/bshmbg.jpg")',
+        'parallax1it': 'url("../public/imageparallax/bsitbg.jpg")',
+        'parallax1ba': 'url("../public/imageparallax/BSBAbg.jpg")',
 
       },
       boxShadow: {
@@ -51,8 +54,8 @@ module.exports = {
         600: '#2563eb',
         700: '#1d4ed8',
         800: '#1e40af',
-        900: '#1e3a8a',
-        950: "#172554",
+        900: '#000C8F',
+        950: "#000866",
     },
     'sky': {
       100: '#e0f2fe',
