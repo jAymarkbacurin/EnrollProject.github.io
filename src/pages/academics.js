@@ -1,6 +1,6 @@
 import Header  from "../components/asset/header";
 import Footer from "../components/asset/footer";
-import Courses from "../components/academicscomponents/courses";
+import Courses from "../components/Academics-components/academics";
 
 
 
@@ -10,8 +10,6 @@ const Academics = () => {
         <>
         <Header />
         <Courses/>
-    
-      
         <Footer />
         </>
      );

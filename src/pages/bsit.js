@@ -1,17 +1,18 @@
-import Header  from "../components/asset/header";
+import Header from "../components/asset/courses-header/courseheader";
 import Footer from "../components/asset/footer";
-import BSIT from "../components/academicscomponents/COURSES/bsitcourse";
+import BSIT from "../components/Information-Technology-components/bsitcourse";
 
 
 const Bsit = () => {
-    
-    return ( 
+   
+    return (
         <>
-        <Header />
-        <BSIT/>
-        <Footer />
+          
+            <Header />
+            <BSIT />
+            <Footer />
         </>
-     );
+    );
 }
- 
-export default  Bsit;
+
+export default Bsit;

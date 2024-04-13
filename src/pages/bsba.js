@@ -1,7 +1,6 @@
 import Header  from "../components/asset/header";
 import Footer from "../components/asset/footer";
-
-import BSBA from "../components/academicscomponents/COURSES/bsbacourse";
+import BSBA from "../components/Business-Administration-components/bsbacourse";
 
 
 const Bsba = () => {
