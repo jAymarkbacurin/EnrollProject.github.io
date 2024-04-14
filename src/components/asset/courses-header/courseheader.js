@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ImageLogo from '../sliderimage/finallogo.png';
+import ImageLogo from '../logo/finallogo.png';
 import { useState } from 'react';
 import { IoIosArrowDown, IoMdMenu } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
@@ -12,26 +12,25 @@ const CoursesHeader = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [isOpenIT, setIsOpenIT] = useState(false);
-    
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-    const toggleSmallMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
+
     
     const closeMenu = () => {
-        setMenuOpen(false);
+        setTimeout(() => {
+            setMenuOpen(false);
+        }, 250); // Adjust the delay as needed
     };
+    
+ 
     const toggleDropdownIT = () => {
         setIsOpenIT(!isOpenIT);
+    
    
     };
     const iconSize1 = 16;
     const boxSizeIT = isOpenIT ? 'w-[30rem] h-[12rem]' : 'w-[30rem]  h-[3rem]'; 
     return (
         <>
-            <section className="sticky top-0 z-30 bg-blue-800 shadow-[0_5px_20px_-15px_rgba(0,0,0,4)]">
+            <section className="sticky top-0 z-30 bg-white shadow-[0_5px_20px_-15px_rgba(0,0,0,4)]">
                 <div className="grid lg:grid-cols-3 grid-cols-2 ">
                     <section className="justify-self-start  ml-[2rem]">
                         <div className="flex items-center ">
@@ -39,10 +38,10 @@ const CoursesHeader = () => {
                                 width={80}
                                 height={80}
                                 src={ImageLogo}
-                                className="absolute top-1 left-11 border-solid border-[5px] border-blue-800 rounded-full bg-blue-900"
+                                className="absolute top-1 left-11 border-solid border-[5px] border-white rounded-full bg-white"
                             />
                             <NavLink to="/home">
-                                <h1 className="ml-[6rem] font-title text-[3rem] text-white ">DCCP</h1>
+                                <h1 className="ml-[6rem] font-title text-[3rem] text-blue-800 ">DCCP</h1>
                             </NavLink>
                         </div>
                     </section>
@@ -50,12 +49,13 @@ const CoursesHeader = () => {
                     {/* Small screen */}
                     <section className="justify-self-center content-center mr-11">
                         <div className="md:hidden">
-                            <button onClick={toggleSmallMenu} className="text-white focus:outline-none">
+                            <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-900 focus:outline-none">
                                 <IoMdMenu className="text-[35px]" />
                             </button>
+                           
                         </div>
                         <div className="hidden md:block ">
-                            <ul className="flex font-title text-white">
+                            <ul className="flex font-title text-blue-900">
                                 <div className="flex mx-4 relative">
                                     <button
                                         onClick={() => setIsOpen(!isOpen)}
@@ -79,7 +79,7 @@ const CoursesHeader = () => {
                     </section>
 
                     <section className="justify-self-end content-center mr-[4rem]">
-                        <div className="lg:block hidden font-title text-white">
+                        <div className="lg:block hidden font-title text-blue-900">
                             <div className="flex">
                                 <h1 className="mx-1 text-[1.5rem]">Search</h1>
                                 <FiSearch className="mt-[6px]" />
@@ -90,11 +90,11 @@ const CoursesHeader = () => {
                     {/* Small screen */}
                     
                 </div>
-               
-                <div  className={`fixed z-30 h-full w-screen lg:hidden  top-0 right-0 ${menuOpen ? '' : 'hidden'}`}>
-                            <div className='text-white  flex-col bg-blue-900 backdrop-blur-lg absolute right-0 top-0 h-screen p-8 gap-8 z-50 flex w-screen'>
-                        
-                                <MdOutlineClose  className='text-[30px] font-bold cursor-pointer  absolute  right-8' onClick={closeMenu} />
+            
+                <div className={`fixed z-30 h-full -top-[2rem] w-screen lg:hidden ${menuOpen ? 'translate-y-[1rem] ' : '-translate-y-full'} right-0 ease-in-out duration-300`}>
+                            <div className='text-white  flex-col bg-blue-900 backdrop-blur-lg absolute right-0 top-0 h-screen p-8 gap-8 z-50 flex w-screen transition-all duration-500'>
+                      
+                            <MdOutlineClose  className='text-[30px] font-bold cursor-pointer  absolute  right-8 z-10'onClick={() => setMenuOpen(!menuOpen)} />
                         
                             <ul className='relative'>
                                             <li>

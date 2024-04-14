@@ -33,7 +33,7 @@ const TopicDropdown = ({ title, content }) => {
   );
 };
 
-const Webtopics = () => {
+const Mobiletopics = () => {
   const topics = [
     { title: 'Introduction to Programming', content: ['Overview of client-server architecture', 'Understanding the HTTP protocol', 'Introduction to HTML, CSS, and JavaScript'] },
     { title: 'Introduction to Mobile Development', content: ['Overview of mobile platforms (iOS, Android)', 'Native vs. cross-platform development', 'Understanding the mobile app lifecycle'] },
@@ -44,18 +44,18 @@ const Webtopics = () => {
   ];
 
   return (
-    <div className='relative lg:absolute lg:top-[6rem] lg:right-[2rem] 3xl:right-[10rem] bg-white z-10'>
+    <div className='3xl:right-[12rem] z-10'>
       <div className='flex justify-center'>
-        <div className='bg-white border-t-[10px] lg:border-none border-blue-500 shadow-lg shadow-gray-300/50'>
-          <h1 className='lg:w-[28rem] md:w-[40rem] w-[28rem] font-title text-[2rem] my-8 ml-11 text-gray-800'>Topics Covered</h1>
+        <div className='bg-white border-t-[10px] lg:border-none border-blue-500 shadow-lg '>
+          <h1 className='lg:w-[28rem] md:w-[40rem] w-[28rem] font-title text-[2rem] my-8 ml-11 text-gray-800'>Mobile Development<br/> Topics Covered</h1>
           {topics.map((topic, index) => (
             <TopicDropdown key={index} title={topic.title} content={topic.content} />
           ))}
         </div>
       </div>
-      <div className="lg:absolute h-full w-full -left-4 top-4 bg-blue-700 -z-10"></div>
+      
     </div>
   );
 };
 
-export default Webtopics;
+export default Mobiletopics;

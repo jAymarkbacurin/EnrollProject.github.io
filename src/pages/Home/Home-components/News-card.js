@@ -29,16 +29,15 @@ const cards = [
 
 const App = () => {
   return (
-    <div className='bg-blue-950 relative'>
+    <div className='bg-gray-100 relative py-[3rem]'>
    
-    <div className='mx-[0rem] md:mx-[6rem] 2xl:mx-[10rem] 3xl:mx-[16rem]  '>
+    <div className='mx-[0rem]    '>
         <div class="container mx-auto mt-12 ">
-            <div class=" w-full mb-3 p-3  flex justify-center ">
+            <div class=" w-full mb-3 p-3  flex justify-start">
               
-            <h1 class="text-white text-[3.3rem] font-medium font-title relative">
-              <span class="hidden lg:block absolute left-[16rem] top-1/2 w-[20rem]  h-[3px] bg-yellow-500"></span>
-              <span class="hidden lg:block absolute right-[16rem] top-1/2  w-[20rem]   h-[3px] bg-yellow-500"></span>
-              <NavLink to="/news" class="z-10 relative lg:decoration-blue-950 underline decoration-yellow-500">
+            <h1 class="text-gray-700 text-[4rem] font-medium font-title relative">
+      
+              <NavLink to="/news" class="z-10  underline decoration-yellow-500">
                   News & 
                    Events
               </NavLink>

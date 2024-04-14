@@ -143,17 +143,17 @@
   
   .activeIT {
     text-decoration: underline;
-    text-decoration-color: #0733C5;
-    color: #1f2937;
+    text-decoration-color: #E5B710;
+    color: white;
  
   }
   .icon {
-    margin-top: 28px;
-    margin-right: 12px;
-    color: white; /* Default icon color */
+    margin-top: 12px;
+    margin-right: 5px;
+    color: #01124D; /* Default icon color */
   }
   
   .activeIcon {
-    color: #0733C5; /* Change this to whatever color you want */
+    color: #E5B710; /* Change this to whatever color you want */
   }
   

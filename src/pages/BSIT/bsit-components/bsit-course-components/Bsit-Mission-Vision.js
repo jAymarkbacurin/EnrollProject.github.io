@@ -1,6 +1,6 @@
 import React from 'react';
 import Bsit1 from '../ITimage/Mission-Vision-images/bsiti1.jpg';
-import '../stylee.css';
+import '../IT-style.css';
 
 const CardBsit = () => {
     return ( 

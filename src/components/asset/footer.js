@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { RiMessengerFill } from "react-icons/ri";
-import ImageLogo from './sliderimage/finallogo.png';
+import ImageLogo from './logo/finallogo.png';
 
 // Footer component
 const Footer = () => {

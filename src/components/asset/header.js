@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import { NavLink } from "react-router-dom";
 import { IoMenu, IoClose, IoLocationSharp } from "react-icons/io5";
 import { FaArrowRight, FaPhoneAlt } from "react-icons/fa";
-import ImageLogo from './sliderimage/finallogo.png';
+import ImageLogo from './logo/finallogo.png';
 import { TiArrowSortedDown } from "react-icons/ti";
 import { RiSearch2Line } from "react-icons/ri";
 
