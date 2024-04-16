@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BsDot } from "react-icons/bs";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
+import Requirements from '../../../../components/asset/requirements';
 
 const TopicDropdown = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,14 +11,14 @@ const TopicDropdown = ({ title, content }) => {
   };
 
   const iconSize = 20;
-  const boxSize = isOpen ? 'w-[25rem] md:w-[40rem] lg:w-[28rem] lg:h-[10rem] h-[12.5]' : 'w-[25rem] md:w-[40rem] lg:w-[28rem] h-[5rem]';
+  const boxSize = isOpen ? 'w-[25rem] md:w-[40rem] lg:w-[28rem] lg:h-[10rem] h-[12.5]' : 'w-[25rem] md:w-[40rem] lg:w-[28rem] h-[4.5rem]';
 
   return (
     <section className='flex justify-center'>
       <div className={`border-t-[3px] border-gray-200 p-4 transition-all duration-300 ease-in-out cursor-pointer ${boxSize}`}>
         <div className="flex" onClick={toggleDropdown}>
-          <h1 className="mr-auto font-title text-[1.5rem] text-gray-800">{title}</h1>
-          <IoIosArrowDropdownCircle size={iconSize} className={isOpen ? 'rotated' : 'not-rotated'} />
+        <h1 className="mr-auto font-para text-[1rem] font-semibold  text-gray-800">{title}</h1>
+          <IoIosArrowDropdownCircle size={iconSize} className={isOpen ? 'rotated  ' : 'not-rotated'} />
         </div>
         {isOpen && (
           <div>
@@ -47,10 +48,11 @@ const Mobiletopics = () => {
     <div className='3xl:right-[12rem] z-10'>
       <div className='flex justify-center'>
         <div className='bg-white border-t-[10px] lg:border-none border-blue-500 shadow-lg '>
-          <h1 className='lg:w-[28rem] md:w-[40rem] w-[28rem] font-title text-[2rem] my-8 ml-11 text-gray-800'>Mobile Development<br/> Topics Covered</h1>
+          <h1 className='lg:w-[28rem] md:w-[40rem] w-[28rem] font-para font-bold text-[2rem] my-8 ml-9 text-blue-900 '>Web Development   <hr className='border-[2px] border-yellow-400 w-[10rem]' /> </h1>
+          <h1 className='lg:w-[28rem] md:w-[40rem] w-[28rem] font-title text-[1.2rem] my-4 ml-9 text-gray-800 tracking-widest'> Topics Covered</h1>
           {topics.map((topic, index) => (
             <TopicDropdown key={index} title={topic.title} content={topic.content} />
-          ))}
+          ))} <Requirements/>
         </div>
       </div>
       

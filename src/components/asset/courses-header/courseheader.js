@@ -38,7 +38,7 @@ const CoursesHeader = () => {
                                 width={80}
                                 height={80}
                                 src={ImageLogo}
-                                className="absolute top-1 left-11 border-solid border-[5px] border-white rounded-full bg-white"
+                                className="absolute top-1 left-11 border-solid border-[5px] border-white rounded-full  bg-white  "
                             />
                             <NavLink to="/home">
                                 <h1 className="ml-[6rem] font-title text-[3rem] text-blue-800 ">DCCP</h1>
@@ -91,7 +91,7 @@ const CoursesHeader = () => {
                     
                 </div>
             
-                <div className={`fixed z-30 h-full -top-[2rem] w-screen lg:hidden ${menuOpen ? 'translate-y-[1rem] ' : '-translate-y-full'} right-0 ease-in-out duration-300`}>
+                <div className={`fixed z-30 h-full left-0 -top-[2rem] w-screen lg:hidden ${menuOpen ? 'translate-y-[1rem] ' : '-translate-y-full'} right-0 ease-in-out duration-300`}>
                             <div className='text-white  flex-col bg-blue-900 backdrop-blur-lg absolute right-0 top-0 h-screen p-8 gap-8 z-50 flex w-screen transition-all duration-500'>
                       
                             <MdOutlineClose  className='text-[30px] font-bold cursor-pointer  absolute  right-8 z-10'onClick={() => setMenuOpen(!menuOpen)} />

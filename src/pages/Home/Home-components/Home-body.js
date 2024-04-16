@@ -40,7 +40,7 @@ const Learning = () => {
                     </section> 
                 </div>
          
-                    <div className=' md:h-[38rem] h-[34rem] rounded-lg w-full z-50'>
+                    <div className=' md:h-[38rem] h-[34rem] rounded-lg w-full '>
                     <img src={Gallery} alt='Your Image' className='object-cover w-full h-full ' />
                     </div>
      
@@ -52,7 +52,7 @@ const Learning = () => {
             <section className='grid lg:grid-cols-2 grid-cols-1 bg-blue-950 w-full h-full lg:py-4'>
                 <div>
                 <div className='relative'>
-                        <div className='z-50 relative'><img src={studentdance} className='lg:mt-[2rem]   ' /></div>
+                        <div className='z-10 relative'><img src={studentdance} className='lg:mt-[2rem]   ' /></div>
                         <div className="hidden lg:block lg:absolute h-full w-full left-4 -top-4  border-yellow-500 border-[1px] z-0"></div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const Learning = () => {
                     </div>
                 <div>
                     <div className='relative'>
-                    <div className='z-50 relative'><img src={studentdance} className='lg:mb-[2rem] m-[2rem] lg:m-0'  /></div>
+                    <div className='z-10 relative'><img src={studentdance} className='lg:mb-[2rem] m-[2rem] lg:m-0'  /></div>
                         <div className="lg:absolute h-full w-full -left-4 top-4 border-yellow-500 border-[1px] z-0"></div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ const Learning = () => {
               {/* Small screen */}
             <section className=' lg:hidden grid lg:grid-cols-2 grid-cols-1 bg-blue-950 w-full h-full py-4'>   
                          <div className='relative'>
-                        <div className='z-50 relative'><img src={studentdance} className='mr-4  ' /></div>
+                        <div className='z-10 relative'><img src={studentdance} className='mr-4  ' /></div>
                         <div className="hidden lg:block absolute h-full w-full right-4 -top-4  border-yellow-500 border-[1px] z-0"></div>
                     </div>
                 <div className='flex flex-col justify-center items-start p-[3rem]'>

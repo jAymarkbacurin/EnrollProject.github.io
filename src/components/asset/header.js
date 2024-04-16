@@ -170,7 +170,7 @@ const Header = () => {
             </div>
 
             {/* Smaller screen menu */}
-            <div className={`fixed z-30 h-full w-screen lg:hidden top-0 right-0 ${menuOpen ? '' : 'hidden'}`}>
+            <div className={`fixed z-30 h-full left-0 -top-[2rem] w-screen lg:hidden ${menuOpen ? 'translate-y-[1rem] ' : '-translate-y-full'} right-0 ease-in-out duration-300`}>
                 <div className='text-white font-title flex-col bg-blue-950 backdrop-blur-lg absolute right-0 top-0 h-screen p-8 gap-8 z-50 flex w-screen'>
                     <IoClose className='text-[30px] cursor-pointer absolute top-10 right-8' onClick={closeMenu} />
                     <div className="flex items-center ml-1">
@@ -185,16 +185,16 @@ const Header = () => {
                             </h1> 
                             {isOpenIT && (
                                 <div className="absolute ml-1 py-2 mx-1 ">
-                                    <NavLink to="/academics" id='lineY' className=" mb-3 font-semititle font-semibold  flex text-[18px] text-white" onClick={closeMenu}> 
+                                    <NavLink to="/academics" id='lineY' className=" mb-3 font-semititle  flex text-[18px] text-white" onClick={closeMenu}> 
                                         UNDERGRADUATE PROGRAMMES <FaArrowRight className='ml-2 mt-[2px] text-gray-600'/>
                                     </NavLink>
-                                    <HashLink smooth to='/academics/#bsba'  id='lineY' className="ml-2  font-semititle font-meduim  flex text-[15px] text-white mt-1" onClick={closeMenu}>
+                                    <HashLink smooth to='/academics/#bsba'  id='lineY' className="ml-2  font-semititle  flex text-[15px] text-white mt-1" onClick={closeMenu}>
                                         Bachelor of Science in Business Administration
                                     </HashLink>
-                                    <HashLink smooth to='/academics/#bsit'   id='lineY' className="mb-3 ml-2 font-semititle font-meduim  flex text-[15px] text-white mt-1" onClick={closeMenu}>
+                                    <HashLink smooth to='/academics/#bsit'   id='lineY' className="mb-3 ml-2 font-semititle  flex text-[15px] text-white mt-1" onClick={closeMenu}>
                                         Bachelor of Science in Information Technology
                                     </HashLink>
-                                    <HashLink smooth to='/academics/#bshm'  id='lineY' className="mb-3 ml-2  font-semititle font-meduim flex text-[15px] text-white mt-1" onClick={closeMenu}>
+                                    <HashLink smooth to='/academics/#bshm'  id='lineY' className="mb-3 ml-2  font-semititle  flex text-[15px] text-white mt-1" onClick={closeMenu}>
                                         Bachelor of Science in Hotel Management
                                     </HashLink>
                                 </div>
