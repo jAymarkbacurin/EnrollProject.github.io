@@ -5,6 +5,7 @@
     import TopicsWebcovered from './WebDev-card-topics';
     import { FaCheck } from "react-icons/fa6";
     import students from '../ITimage/Bsit-course-images/IT-images.jpg';
+    import TreesBg from '../ITimage/Bsit-course-images/trees.jpg';
     import { PiArrowCircleRightThin } from "react-icons/pi";
     import Faculty from './Bsit-faculty';
 
@@ -64,6 +65,7 @@
     };  
     
         return ( 
+            <>
             <section className='3xl:mx-[14rem] 2xl:mx-[10rem] xl:mt-[2rem]'> 
             <div className="relative  lg:py-11 text-gray-700  grid  lg:grid-cols-5 grid-cols-1 lg:gap-4 bg-white"> 
                     <div className=' col-start-1 col-end-6 mb-[3rem]'>
@@ -179,18 +181,23 @@
                         </div>
                     </div>
                     <div className='bg-gray-100 mt-[2rem]'>
-                         <div className='col-start-2 col-span-5 '> <Faculty />
-                    </div>
+                       <Faculty />
+                    
                     </div>
                    
                 </div> 
-                
+             
                
     
             </div>
         
-        
-        </section>
+            </section>
+            <section>
+
+                
+            </section>
+
+        </>
 
         );
     }

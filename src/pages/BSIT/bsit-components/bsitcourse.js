@@ -1,25 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import '../style.css';
 import Graduate from './ITimage/Bsit-course-images/graduate.jpg';
-import Bsitcard from './bsit-course-components/Bsit-Mission-Vision';
 import Majors from './bsit-course-components/Bsit-majors';
-import { IoIosArrowDropdownCircle } from "react-icons/io";
-import { RiBook3Line } from "react-icons/ri";
+
+
 
 
 
 const BSIT = () => {
    
-    const [isOpenBA1, setIsOpenBA1] = useState(false);
-    const [isOpenIT, setIsOpenIT] = useState(false);
-    const [isOpenIcon, setIsOpenIcon] = useState(false);
-
-   
-
-
-    const iconSize = 20;
-
-    const boxSizeBA = isOpenIT ? 'w-[16rem] h-[8.5rem]' : 'w-[16rem] h-[4rem]';
+ 
 
     return (
         <>
@@ -61,7 +51,6 @@ const BSIT = () => {
            
            
         
-            <Bsitcard />
         </>
     );
 };

@@ -15,7 +15,7 @@ const TopicDropdown = ({ title, content }) => {
 
   return (
     <section className='flex justify-center'>
-      <div className={`border-t-[3px] border-gray-200 p-4 transition-all duration-300 ease-in-out cursor-pointer ${boxSize}`}>
+      <div className={`border-t-[2px] border-gray-200 p-4 transition-all duration-300 ease-in-out cursor-pointer ${boxSize}`}>
         <div className="flex" onClick={toggleDropdown}>
         <h1 className="mr-auto font-para text-[1rem] font-semibold  text-gray-800">{title}</h1>
           <IoIosArrowDropdownCircle size={iconSize} className={isOpen ? 'rotated  ' : 'not-rotated'} />
@@ -34,7 +34,7 @@ const TopicDropdown = ({ title, content }) => {
   );
 };
 
-const Mobiletopics = () => {
+const Webtopics = () => {
   const topics = [
     { title: 'Introduction to Programming', content: ['Overview of client-server architecture', 'Understanding the HTTP protocol', 'Introduction to HTML, CSS, and JavaScript'] },
     { title: 'Introduction to Mobile Development', content: ['Overview of mobile platforms (iOS, Android)', 'Native vs. cross-platform development', 'Understanding the mobile app lifecycle'] },
@@ -60,4 +60,4 @@ const Mobiletopics = () => {
   );
 };
 
-export default Mobiletopics;
+export default Webtopics;

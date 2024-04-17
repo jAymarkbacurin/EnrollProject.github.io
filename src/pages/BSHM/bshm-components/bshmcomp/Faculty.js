@@ -1,12 +1,12 @@
-import sophia from '../ITimage/faculty-images/sophia-faculty.jpg';
-import jake from '../ITimage/faculty-images/jake-faculty.jpg';
-import soren from '../ITimage/faculty-images/soren-faculty.jpg';
-import zed from '../ITimage/faculty-images/zed-faculty.jpg';
-import lukkanit from '../ITimage/faculty-images/lukkanit-faculty.jpg';
-import angelica from '../ITimage/faculty-images/angelica-faculty.jpg';
-import paul from '../ITimage/faculty-images/paul-faculty.jpg';
-import jelmar from '../ITimage/faculty-images/jelmar-faculty.jpg';
-import rose from '../ITimage/faculty-images/rose-faculty.jpg';
+import sophia from '../HM-images/faculty-images/sophia-faculty.jpg';
+import jake from '../HM-images/faculty-images/jake-faculty.jpg';
+import soren from '../HM-images/faculty-images/soren-faculty.jpg';
+import zed from '../HM-images/faculty-images/zed-faculty.jpg';
+import lukkanit from '../HM-images/faculty-images/lukkanit-faculty.jpg';
+import angelica from '../HM-images/faculty-images/angelica-faculty.jpg';
+import paul from '../HM-images/faculty-images/paul-faculty.jpg';
+import jelmar from '../HM-images/faculty-images/jelmar-faculty.jpg';
+import rose from '../HM-images/faculty-images/rose-faculty.jpg';
 
 const Faculty = () => {
     return ( 
