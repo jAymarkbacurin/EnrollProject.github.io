@@ -11,24 +11,26 @@ const Requirements = () => {
     const iconSize1 = 34;
     return ( 
         <>
-       <div className="flex justify-start lg:pt-2 py-4 font-title font-medium md:text-[1.5rem] ml-[2.5rem] ">
+                 <div className="  font-title font-medium md:text-[1.5rem]  ">
                 
-                        <div className=" cursor-pointer px-[1rem]  flex  bg-yellow-500 hover:-translate-y-1 transition ease-in-out delay-150" onClick={() => setIsOpenBA1(!isOpenBA1)}>
-                            <FiArrowLeft className='mt-[15px] text-white'/> 
-                            <h1 className='text-white text-[1.3rem] p-3'>requirements</h1>
+                      
+                    <button className='text-white font-title text-[1rem] tracking-wide border-white border-2 p-2 w-full mt-[10px] rounded-xl hover:border-yellow-500 hover:text-yellow-500 hover:-translate-y-1 transition ease-in-out delay-150' onClick={() => setIsOpenBA1(!isOpenBA1)}>
+                        <h1> Requirements</h1>
+                       
+                     </button>
                            
-                        </div>
+              
                       
                     
                 </div>
                 <div className={`fixed  z-50 h-full right-0 top-0 2xl:w-[100rem] w-full bg-gray-100   ${isOpenBA1 ? 'translate-x-0 ' : 'translate-x-full'}  ease-in-out duration-300`}>
                     
                     
-                    <div className='w-full h-[20rem]'>
-                        <img src={Graduate} className='object-cover w-full h-full brightness-50'/>
+                    <div className='w-full h-[20rem] '>
+                        <img src={Graduate} className='object-cover w-full h-full brightness-50 '/>
                     </div>
                     <div className='text-white '>
-                        <SlClose   className='text-[30px]  font-bold cursor-pointer  absolute  right-[2rem] top-[3rem] z-10'onClick={() => setIsOpenBA1(!isOpenBA1)}  size={iconSize1}/>
+                        <SlClose   className='text-[30px]  font-bold cursor-pointer  absolute  right-[2rem] top-[5rem] z-10 'onClick={() => setIsOpenBA1(!isOpenBA1)}  size={iconSize1}/>
                         </div>
                 
                  <section className=' my-12'>

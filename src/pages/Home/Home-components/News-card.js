@@ -29,26 +29,25 @@ const cards = [
 
 const App = () => {
   return (
-    <div className='bg-gray-100 relative py-[3rem]'>
+    <div className='bg-gray-100 relative   mx-[10px]  lg:mx-[3rem]  xl:mx-[4rem] 2xl:mx-[7rem] pt-[4rem] border-r-[1px] border-l-[1px] border-gray-300 '>
    
-    <div className='mx-[0rem]    '>
-        <div class="container mx-auto mt-12 ">
-            <div class=" w-full mb-3 p-3  flex justify-start">
+    
+            <div class=" w-full mb-3 ">
               
-            <h1 class="text-gray-700 text-[4rem] font-medium font-title relative">
+            <h1 class="text-blue-800 text-[4rem] px-[3rem] pt-[2rem]   font-medium font-title relative   border-t-[1px] border-gray-300  w-full">
       
-              <NavLink to="/news" class="z-10  underline decoration-yellow-500">
+              <NavLink to="/news" class="z-10  w-full  ">
                   News & 
                    Events
               </NavLink>
           </h1>
 
-
+       
             </div>
-           <div> <CardCarousel cards={cards} /></div>
+           
              
-        </div> 
-    </div> 
+     
+     <div> <CardCarousel cards={cards} /></div>
     </div>
   );
 };

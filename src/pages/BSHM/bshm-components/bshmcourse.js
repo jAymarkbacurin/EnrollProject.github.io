@@ -7,7 +7,7 @@ import Course from '../bshm-components/bshmcomp/Course';
 
 
 
-const BSIT = () => {
+const BSHM = () => {
    
  
 
@@ -55,4 +55,4 @@ const BSIT = () => {
     );
 };
 
-export default BSIT;
+export default BSHM;

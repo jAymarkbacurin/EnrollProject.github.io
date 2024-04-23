@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../style.css';
 import Graduate from './ITimage/Bsit-course-images/graduate.jpg';
-import Majors from './bsit-course-components/Bsit-majors';
+import Majors from './bsit-course-components/body';
 
 
 

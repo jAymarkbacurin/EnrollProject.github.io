@@ -19,6 +19,12 @@ const CoursesHeader = () => {
             setMenuOpen(false);
         }, 250); // Adjust the delay as needed
     };
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
     
  
     const toggleDropdownIT = () => {
@@ -30,7 +36,7 @@ const CoursesHeader = () => {
     const boxSizeIT = isOpenIT ? 'w-[30rem] h-[12rem]' : 'w-[30rem]  h-[3rem]'; 
     return (
         <>
-            <section className="sticky top-0 z-30 bg-white shadow-[0_5px_20px_-15px_rgba(0,0,0,4)]">
+            <section className="sticky top-0 z-50 bg-white shadow-[0_5px_20px_-15px_rgba(0,0,0,4)]">
                 <div className="grid lg:grid-cols-3 grid-cols-2 ">
                     <section className="justify-self-start  ml-[2rem]">
                         <div className="flex items-center ">
@@ -47,10 +53,10 @@ const CoursesHeader = () => {
                     </section>
 
                     {/* Small screen */}
-                    <section className="justify-self-center content-center mr-11">
+                    <section className="justify-self-center content-center  ml-[2rem]">
                         <div className="md:hidden">
                             <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-900 focus:outline-none">
-                                <IoMdMenu className="text-[35px]" />
+                                <IoMdMenu className="text-[45px]" />
                             </button>
                            
                         </div>
@@ -63,13 +69,16 @@ const CoursesHeader = () => {
                                     >
                                         Courses
                           
-                                    </button>
+                                    </button>   
                                     {isOpen && (
-                                        <div className="absolute -right-[15rem] top-2 bg-white font-para text-[1.1rem] shadow-lg w-[28rem] mt-14 p-4   ">
-                                            <a href="#" className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700">Bachelor of Science in Business Administration</a>
-                                            <a href="#" className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700">Bachelor of Science in Information Technology</a>
-                                            <a href="#" className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700  ">Bachelor of Science in Hospitality Management</a>
+
+                                        <div className="absolute -right-[15rem] top-2 bg-white font-para text-[1rem] shadow-lg w-[28rem] mt-14 p-4   ">
+                                             <h1 className="font-title  text-[1.5rem] tracking-wide px-4 py-2 ">Undergraduate</h1>
+                                           <NavLink smooth to='/bsba' onClick={scrollToTop}><a className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700">Bachelor of Science in Business Administration</a></NavLink> 
+                                           <NavLink smooth to='/bsit' onClick={scrollToTop}><a className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700">Bachelor of Science in Information Technology</a></NavLink> 
+                                           <NavLink smooth to='/bshm' onClick={scrollToTop}> <a  className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700  ">Bachelor of Science in Hospitality Management</a></NavLink> 
                                         </div>
+                                  
                                     )}
                                 </div>
                                 <li className="mx-4 text-[1.5rem]">About</li>

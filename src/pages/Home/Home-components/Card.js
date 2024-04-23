@@ -13,6 +13,7 @@ const CardCarousel = ({ cards }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1200,
@@ -31,17 +32,18 @@ const CardCarousel = ({ cards }) => {
         },
       },
     ],
+  
   };
 
   return (
-    <div className='py-6 pb-[6rem] '>
+    <div className='py-6 pb-[4rem] border-b-[1px] border-gray-300 p-4 '>
       {/* Blue div behind all cards */}
     
    
       <Slider {...settings}>
         {cards.map((card, index) => (
-          <div key={index} className="px-2   ">
-            <div class="card group">
+          <div key={index} className="px-[2rem]  ">
+            <div class="card group  ">
               <div className="bg-gray-100 hover:bg-blue-100 overflow-hidden h-[32rem] cursor-pointer hover:shadow-md shadow-gray-400 transition duration-500 transform hover:-translate-y-[4px] relative">
                 {/* Here is your card content */}
                 <img src={card.image} alt={card.title} className="text-gray-700 w-full h-[19rem] object-cover group-hover:scale-105 transition duration-150 ease-out brightness-70 group-hover:brightness-100" />
