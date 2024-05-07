@@ -52,7 +52,7 @@ const Webtopics = () => {
     <div className='md:px-[2rem] px-[10px] z-10'>
  
         <div className='bg-gray-100 py-[1rem] w-full border-t-[10px] lg:border-none border-blue-500  sm:px-[2rem] '>
-          <h1 className='w-full font-para font-bold text-[2rem] my-8 underline decoration-yellow-600  text-blue-900 '>Web Development   </h1>
+          <h1 className='w-full font-para font-bold text-[2rem] my-8 underline decoration-yellow-600  text-blue-700 '>Web Development   </h1>
           <h1 className='w-full  font-title text-[1.2rem] my-4  text-gray-800 tracking-widest'> Topics covered in this course include:</h1>
           {topics.map((topic, index) => (
             <TopicDropdown key={index} title={topic.title} content={topic.content} />

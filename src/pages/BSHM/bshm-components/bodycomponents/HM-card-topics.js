@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BsDot } from "react-icons/bs";
-import { TfiArrowCircleDown } from "react-icons/tfi";
+import { TfiArrowCircleDown  } from "react-icons/tfi";
 
 
 const TopicDropdown = ({ title, content }) => {
@@ -38,7 +38,7 @@ const TopicDropdown = ({ title, content }) => {
   );
 };
 
-const Mobiletopics = () => {
+const HMtopics = () => {
   const topics = [
     { title: 'Introduction to Programming', content: ['Overview of client-server architecture', 'Understanding the HTTP protocol', 'Introduction to HTML, CSS, and JavaScript'] },
     { title: 'Introduction to Mobile Development', content: ['Overview of mobile platforms (iOS, Android)', 'Native vs. cross-platform development', 'Understanding the mobile app lifecycle'] },
@@ -52,7 +52,7 @@ const Mobiletopics = () => {
     <div className='md:px-[2rem] px-[10px] z-10'>
  
     <div className='bg-gray-100 py-[1rem] w-full border-t-[10px] lg:border-none border-blue-500  sm:px-[2rem] '>
-        <h1 className='w-full font-para font-bold md:text-[1.8rem] text-[1.5rem] my-8 underline decoration-yellow-600   text-blue-900'>Mobile Development    </h1>
+        <h1 className='w-full font-para font-bold md:text-[1.8rem] text-[1.5rem] my-8 underline decoration-yellow-600   text-blue-700'>Hospitality Management   </h1>
           <h1 className=' w-full font-title  text-[1.2rem] my-4  text-gray-800 tracking-widest'> Topics covered in this course include:</h1>
           {topics.map((topic, index) => (
             <TopicDropdown key={index} title={topic.title} content={topic.content} />
@@ -65,4 +65,4 @@ const Mobiletopics = () => {
   );
 };
 
-export default Mobiletopics;
+export default HMtopics;

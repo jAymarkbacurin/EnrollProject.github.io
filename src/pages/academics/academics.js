@@ -68,7 +68,8 @@ const Academics = () => {
           </p>
           </div>
           
-      </div> </section> 
+      </div> 
+      </section> 
           
       
         <section className=' bg-blue-950 '>

@@ -1,26 +1,25 @@
-import sophia from '../ITimage/faculty-images/sophia-faculty.jpg';
-import jake from '../ITimage/faculty-images/jake-faculty.jpg';
-import soren from '../ITimage/faculty-images/soren-faculty.jpg';
-import zed from '../ITimage/faculty-images/zed-faculty.jpg';
-import lukkanit from '../ITimage/faculty-images/lukkanit-faculty.jpg';
-import angelica from '../ITimage/faculty-images/angelica-faculty.jpg';
-import paul from '../ITimage/faculty-images/paul-faculty.jpg';
-import jelmar from '../ITimage/faculty-images/jelmar-faculty.jpg';
-import rose from '../ITimage/faculty-images/rose-faculty.jpg';
+import sophia from '../faculty-images/sophia-faculty.jpg';
+import jake from '../faculty-images/jake-faculty.jpg';
+import soren from '../faculty-images/soren-faculty.jpg';
+import zed from '../faculty-images/zed-faculty.jpg';
+import lukkanit from '../faculty-images/lukkanit-faculty.jpg';
+import paul from '../faculty-images/paul-faculty.jpg';
+
+
 
 const Faculty = () => {
     return ( 
     
 <div >
 <div className='font-para pt-[4rem]  mx-[2rem]'>
-    <h1 className='text-[1.8rem] font-bold text-blue-900 underline decoration-yellow-600'>Our Faculty</h1>
+    <h1 className='text-[1.8rem] font-bold text-blue-700 underline decoration-yellow-600'>Our Faculty</h1>
     <p className='sm:max-w-[70%] 2xl:max-w-[90%] py-4 text-[1.1rem]'>Meet your dedicated teachers, the guiding force behind your academic journey. With passion, expertise, and a commitment to your success, they're here to inspire and support you every step of the way.</p>
 </div>
     <div className='grid lg:grid-cols-3 grid-cols-2 gap-[2rem] sm:mx-[2rem] mx-[10px] sm:py-[2rem] pb-[4rem]'>
        
         {[
             { name: 'Sophia Panget', imgSrc: sophia, discription: 'Department Head'  },
-            { name: 'Angelica Songleo', imgSrc: angelica, discription: 'Assistant Professor of Information Technology'  },
+            { name: 'Angelica Songleo', imgSrc: soren, discription: 'Assistant Professor of Information Technology'  },
             { name: 'Jake Agustin', imgSrc: jake, discription: 'Assistant Professor of Information Technology'  },
           
           

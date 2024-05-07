@@ -13,11 +13,12 @@ const Requirements = () => {
         <>
                  <div className="  font-title font-medium md:text-[1.5rem]  ">
                 
-                      
-                    <button className='text-white font-title text-[1rem] tracking-wide border-white border-2 p-2 w-full mt-[10px] rounded-xl hover:border-yellow-500 hover:text-yellow-500 hover:-translate-y-1 transition ease-in-out delay-150' onClick={() => setIsOpenBA1(!isOpenBA1)}>
-                        <h1> Requirements</h1>
                        
-                     </button>
+                 <button className='p-[15px] px-[2rem] cursor-pointer  bg-blue-600 rounded-lg group hover:bg-yellow-600' onClick={() => setIsOpenBA1(!isOpenBA1)}>
+                                    <h1  className=' font-title tracking-widest text-[1.2rem] text-white' >Requirements</h1>
+                         </button>
+                           
+                
                            
               
                       
@@ -30,7 +31,7 @@ const Requirements = () => {
                         <img src={Graduate} className='object-cover w-full h-full brightness-50 '/>
                     </div>
                     <div className='text-white '>
-                        <SlClose   className='text-[30px]  font-bold cursor-pointer  absolute  right-[2rem] top-[5rem] z-10 'onClick={() => setIsOpenBA1(!isOpenBA1)}  size={iconSize1}/>
+                        <SlClose   className='text-[30px]  font-bold cursor-pointer  absolute  right-[2rem] top-[2rem] z-10 'onClick={() => setIsOpenBA1(!isOpenBA1)}  size={iconSize1}/>
                         </div>
                 
                  <section className=' my-12'>

@@ -74,9 +74,9 @@ const CoursesHeader = () => {
 
                                         <div className="absolute -right-[15rem] top-2 bg-white font-para text-[1rem] shadow-lg w-[28rem] mt-14 p-4   ">
                                              <h1 className="font-title  text-[1.5rem] tracking-wide px-4 py-2 ">Undergraduate</h1>
-                                           <NavLink smooth to='/bsba' onClick={scrollToTop}><a className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700">Bachelor of Science in Business Administration</a></NavLink> 
-                                           <NavLink smooth to='/bsit' onClick={scrollToTop}><a className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700">Bachelor of Science in Information Technology</a></NavLink> 
-                                           <NavLink smooth to='/bshm' onClick={scrollToTop}> <a  className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700  ">Bachelor of Science in Hospitality Management</a></NavLink> 
+                                           <NavLink smooth to='/Bachelor of Science in Business Administration' onClick={scrollToTop}><a className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700">Bachelor of Science in Business Administration</a></NavLink> 
+                                           <NavLink smooth to='/Bachelor of Science in Information Technology' onClick={scrollToTop}><a className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700">Bachelor of Science in Information Technology</a></NavLink> 
+                                           <NavLink smooth to='/Bachelor of Science in Hospitality Management' onClick={scrollToTop}> <a  className="block px-4 py-2 text-gray-900 border-white border-l-4 hover:border-blue-500 hover:text-blue-700  ">Bachelor of Science in Hospitality Management</a></NavLink> 
                                         </div>
                                   
                                     )}

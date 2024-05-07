@@ -1,6 +1,6 @@
 import Header from "../../components/asset/courses-header/courseheader";
 import Footer from "../../components/asset/footer";
-import BSIT from "./bsit-components/bsitcourse";
+import Body from "./bsit-components/body";
 
 
 const Bsit = () => {
@@ -9,7 +9,7 @@ const Bsit = () => {
         <>
           
             <Header />
-            <BSIT />
+            <Body/>
             <Footer />
         </>
     );

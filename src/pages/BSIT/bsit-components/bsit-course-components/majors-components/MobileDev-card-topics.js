@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BsDot } from "react-icons/bs";
-import { IoIosArrowDropdownCircle } from "react-icons/io";
+import { TfiArrowCircleDown } from "react-icons/tfi";
 
 
 const TopicDropdown = ({ title, content }) => {
@@ -11,14 +11,18 @@ const TopicDropdown = ({ title, content }) => {
   };
 
   const iconSize = 20;
-  const boxSize = isOpen ? '  lg:h-[10rem] h-[10rem]' : '  h-[5rem]';
+  const boxSize = isOpen ? '  lg:h-[10rem] h-[10rem]' : '  h-[4rem]';
 
   return (
     <section className='flex justify-center '>
       <div className={`border-t-[2px] border-gray-200 p-4 transition-all duration-300 ease-in-out cursor-pointer w-full ${boxSize}`}>
         <div className="flex" onClick={toggleDropdown}>
-          <h1 className="mr-auto ml-[3rem] font-para  lg:text-[1.3rem] text-[1rem]    text-gray-800">{title}</h1>
-          <IoIosArrowDropdownCircle size={iconSize} className={isOpen ? 'rotated -z-10' : 'not-rotated -z-10'} />
+          <h1 className="mr-auto ml-[3rem] font-para  lg:text-[1.2rem] text-[1rem]    text-gray-800">{title}</h1>
+          <TfiArrowCircleDown 
+          size={iconSize} 
+          className={isOpen ? 'rotated' : 'not-rotated'} 
+          style={{ color: '#BF980D' }} 
+        />
         </div>
         {isOpen && (
           <div>
@@ -34,7 +38,7 @@ const TopicDropdown = ({ title, content }) => {
   );
 };
 
-const HMtopics = () => {
+const Mobiletopics = () => {
   const topics = [
     { title: 'Introduction to Programming', content: ['Overview of client-server architecture', 'Understanding the HTTP protocol', 'Introduction to HTML, CSS, and JavaScript'] },
     { title: 'Introduction to Mobile Development', content: ['Overview of mobile platforms (iOS, Android)', 'Native vs. cross-platform development', 'Understanding the mobile app lifecycle'] },
@@ -45,11 +49,11 @@ const HMtopics = () => {
   ];
 
   return (
-    <div className='md:px-[4rem] px-[10px] z-10'>
+    <div className='md:px-[2rem] px-[10px] z-10'>
  
-    <div className='bg-gray-100 py-[1rem] w-full border-t-[10px] lg:border-none border-blue-500  sm:px-[4rem] '>
-        <h1 className='w-full font-para font-bold md:text-[2rem] text-[1.5rem] my-8 ml-9 text-blue-900'>Hospitality Management  </h1>
-          <h1 className=' w-full font-title  text-[1.2rem] my-4 ml-9 text-gray-800 tracking-widest'> Topics covered in this course include:</h1>
+    <div className='bg-gray-100 py-[1rem] w-full border-t-[10px] lg:border-none border-blue-500  sm:px-[2rem] '>
+        <h1 className='w-full font-para font-bold md:text-[1.8rem] text-[1.5rem] my-8 underline decoration-yellow-600   text-blue-700'>Mobile Development    </h1>
+          <h1 className=' w-full font-title  text-[1.2rem] my-4  text-gray-800 tracking-widest'> Topics covered in this course include:</h1>
           {topics.map((topic, index) => (
             <TopicDropdown key={index} title={topic.title} content={topic.content} />
           ))}
@@ -61,4 +65,4 @@ const HMtopics = () => {
   );
 };
 
-export default HMtopics;
+export default Mobiletopics;
