@@ -100,7 +100,7 @@
     
         return ( 
             <>
-            <section className=' mx-[10px]  lg:mx-[3rem]  xl:mx-[4rem] 2xl:mx-[7rem]'> 
+            <section className=' mx-[10px]  lg:mx-[2rem]  xl:mx-[3rem] 2xl:mx-[5rem]'> 
             <div className="relative  lg:py-11 text-gray-700  grid  lg:grid-cols-6 grid-cols-1  bg-white border-l-[1px]  border-r-[1px]  border-gray-300"> 
                     <div className=' col-start-1 col-span-6  border-t-[1px]  border-gray-300 md:p-[4rem] p-[1rem] mt-[2rem]'>
                         <div className='grid lg:grid-cols-2 grid-cols-1 mt-[1rem]'>
@@ -127,7 +127,7 @@
 
                         </div>
                         <div className='border-b-[6px] border-blue-900 '>
-                             <div className='2xl:mx-[10rem] lg:mx-[5rem] my-[4rem] '>
+                             <div className='2xl:mx-[7rem] lg:mx-[5rem] my-[4rem] '>
                             <div className='font-para text-[1.2rem]'>
                                 <p className='text-justify'>Welcome to the <span className='text-yellow-600'> Bachelor of Science in Information Technology</span> program at <span className='text-yellow-600'>Data Center!</span> Our program offers a gateway to a world of endless possibilities in the ever-evolving realm of technology. In today's digital age, the demand for skilled IT professionals has never been higher, and our comprehensive curriculum is designed to equip students with the knowledge, skills, and practical experience needed to excel in this dynamic field.Our program provides a solid foundation to pursue diverse career paths in the exciting world of technology.</p>
                                 <div>
@@ -257,7 +257,7 @@
                 <div className=' border-t-[8px] border-blue-800 w-full'>
                     <div className='p-[4rem]  my-[2rem] '>
                         <div >
-                              <h1 className='font-para text-[2rem] flex justify-center text-blue-600 font-semibold'>Ready to take the next step?</h1>
+                              <h1 className='font-para text-[2rem] flex justify-center text-blue-700 font-semibold'>Ready to take the next step?</h1>
                               <p className='mx-auto font-para text-[1.3rem] text-center py-[2rem] max-w-[70%]'>Join us as we explore the boundless opportunities and benefits that await you in the Bachelor of Science in Information Technology program at Data Center.</p>
                        </div>
                       <div className='flex justify-center gap-4'> 

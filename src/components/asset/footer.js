@@ -8,7 +8,7 @@ import ImageLogo from './logo/finallogo.png';
 // Footer component
 const Footer = () => {
     return ( 
-        <footer className="h-[50rem] lg:h-[40rem] bg-gray-900 ">
+        <footer className="h-[50rem] lg:h-[40rem] bg-gray-900 border-t-[8px] border-yellow-700 ">
             {/* Footer content */}
             <section className='grid grid-cols-1 md:grid-cols-3 gap-5 text-white p-11 text-[1.1rem] font-para mx-[1rem] md:mx-[3rem] xl:mx-[2rem] 2xl:mx-[10rem]'>
                 {/* Left section */}

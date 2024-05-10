@@ -42,7 +42,7 @@ const CardCarousel = ({ cards }) => {
    
       <Slider {...settings}>
         {cards.map((card, index) => (
-          <div key={index} className="px-[2rem]  ">
+          <div key={index} className="px-[1rem]  ">
             <div class="card group  ">
               <div className="bg-gray-100 hover:bg-blue-100 overflow-hidden h-[32rem] cursor-pointer hover:shadow-md shadow-gray-400 transition duration-500 transform hover:-translate-y-[4px] relative">
                 {/* Here is your card content */}

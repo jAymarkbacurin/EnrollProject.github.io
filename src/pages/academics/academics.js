@@ -60,7 +60,7 @@ const Academics = () => {
       {/* courses*/} 
       <section className='bg-gray-100'>
           <div className='mx-[20px]  lg:mx-[5rem]  xl:mx-[6rem] 2xl:mx-[10rem]  border-r-[1px]  border-l-[1px] border-gray-300 grid grid-rows-1' >
-          <div className='w-full flex justify-center mt-[4rem]  border-t-[1px] border-gray-300'><h1 className=' font-title md:text-[4rem] text-[3rem] text-gray-800 '>PROGRAMS WE OFFER<hr className='border-[4px] border-yellow-500 w-[10rem]'/></h1></div> 
+          <div className='w-full flex justify-center mt-[4rem]  border-t-[1px] border-gray-300'><h1 className=' font-title md:text-[4rem] text-[3rem] text-gray-800 pt-[2rem]'>PROGRAMS WE OFFER<hr className='border-[4px] border-yellow-500 w-[10rem]'/></h1></div> 
           
           <div className=' flex justify-center md:py-[3rem]  '>
             <p className='w-[full] text-center font-para md:text-[1.2rem] text-[1rem] text-gray-800 border-b-[1px] border-gray-300 pb-[4rem] sm:px-[4rem] px-4' >
@@ -75,7 +75,7 @@ const Academics = () => {
         <section className=' bg-blue-950 '>
         
           
-            <section  className="flex 3xl:mx-[12rem] md:mx-[6rem] mx-[2rem] pb-8">
+            <section  className="flex 3xl:mx-[12rem] md:mx-[4rem] mx-[2rem] pb-8">
            
              
            <section className="flex-grow flex-col p-1  ">

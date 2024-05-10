@@ -27,7 +27,7 @@ const Connect = () => {
                 </div>
               </div>
        </section>
-       <div className='mx-[20px]  lg:mx-[5rem]  xl:mx-[6rem] 2xl:mx-[10rem] border-b-[1px] border-r-[1px]  border-l-[1px] border-gray-300 grid grid-rows-1' >
+       <div className='mx-[20px]  lg:mx-[5rem]  xl:mx-[6rem] 2xl:mx-[6rem] border-b-[1px] border-r-[1px]  border-l-[1px] border-gray-300 grid grid-rows-1' >
           <div className='w-full flex justify-center mt-[4rem]  border-t-[1px]  border-gray-300'><h1 className=' font-title md:text-[3rem] text-[2rem] text-gray-800 mt-[2rem]'>Connect with DATA CENTER College</h1></div> 
           
           <div className=' flex justify-center md:py-[3rem] py-[2rem] border-b-[1px] border-gray-300  mb-[4rem]'>

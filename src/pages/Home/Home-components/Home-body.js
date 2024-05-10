@@ -21,7 +21,7 @@ const Learning = () => {
     return (  
         <div className='  bg-gray-100 '>
             {/* First Section */}
-            <section className='border-l-[1px] border-r-[1px]  border-gray-300 grid lg:py-[4rem] py-[2rem] grid-cols-1 lg:grid-cols-2 mx-[10px]  lg:mx-[3rem]  xl:mx-[4rem] 2xl:mx-[7rem]  justify-self-center '>
+            <section className='border-l-[1px] border-r-[1px]  border-gray-300 grid lg:py-[4rem] py-[2rem] grid-cols-1 lg:grid-cols-2 mx-[10px]  lg:mx-[1.3rem]  xl:mx-[2rem] 2xl:mx-[4rem]  justify-self-center '>
                
           
                     <div className='p-4 border-t-[1px]  border-b-[1px] flex  items-center   '>

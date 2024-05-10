@@ -79,7 +79,7 @@ const Header = () => {
     return (
         <header className='shadow-2xl tracking-[.030em]'>
             {/* Location and Contact Info */}
-            <div className=' bg-blue-950 p-4 hidden sm:grid lg:grid-cols-2 m-auto overflow-x-auto font-header'>
+            <div className=' bg-blue-800 p-4 hidden sm:grid lg:grid-cols-2 m-auto overflow-x-auto font-header'>
                 <div className='flex text-white justify-self-center'>
                     <IoLocationSharp className='mr-[-38px]' />
                     <NavLink className='mx-11 text-[10px] md:text-[13px] text-left'>
@@ -171,7 +171,7 @@ const Header = () => {
 
             {/* Smaller screen menu */}
             <div className={`fixed z-30 h-full left-0 -top-[2rem] w-screen lg:hidden ${menuOpen ? 'translate-y-[1rem] ' : '-translate-y-full'} right-0 ease-in-out duration-300`}>
-                <div className='text-white font-title flex-col bg-blue-950 backdrop-blur-lg absolute right-0 top-0 h-screen p-8 gap-8 z-50 flex w-screen'>
+                <div className='text-white font-title flex-col bg-blue-700 backdrop-blur-lg absolute right-0 top-0 h-screen p-8 gap-8 z-50 flex w-screen'>
                     <IoClose className='text-[30px] cursor-pointer absolute top-10 right-8' onClick={closeMenu} />
                     <div className="flex items-center ml-1">
                         <img width={70} height={70} src={ImageLogo} />

@@ -26,7 +26,7 @@ const TopicDropdown = ({ title, content }) => {
         </div>
         {isOpen && (
           <div>
-            <ul className='font-para lg:text-[1.2rem] text-[1rem] ml-[5rem] lg:mt-[1rem] '>
+            <ul className='font-para lg:text-[1rem] text-[1rem] ml-[5rem] lg:mt-[1rem] '>
               {content.map((item, index) => (
                 <li key={index} className='flex'><BsDot/> {item}</li>
               ))}

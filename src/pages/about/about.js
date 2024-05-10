@@ -19,11 +19,11 @@ const About = () => {
     return ( 
         < div className="bg-gray-50">
         <Header />
-        <section className=' mx-[10px]  lg:mx-[3rem]  xl:mx-[4rem] 2xl:mx-[7rem]'> 
+        <section className=' mx-[10px]  lg:mx-[3rem]  xl:mx-[4rem] 2xl:mx-[4rem]'> 
             <div className="relative  lg:py-11 text-gray-700  grid  lg:grid-cols-6 grid-cols-1   border-l-[1px]  border-r-[1px]  border-gray-300"> 
             <section className="col-start-1 col-span-6 border-t-[1px] border-gray-300  ">
               
-            <div className=" relative w-full lg:h-[45rem]  h-[40rem]  mx-auto  2xl:px-[12rem] xl:px-[10rem] lg:px-[6rem] px-[1rem]  pt-[4rem]">
+            <div className=" relative w-full lg:h-[45rem]  h-[40rem]  mx-auto  2xl:px-[7rem] xl:px-[10rem] lg:px-[6rem] px-[1rem]  pt-[4rem]">
                       <img
                         src={mission} 
                         alt="Final Logo"
@@ -34,15 +34,15 @@ const About = () => {
             </section>
                     <div className=' col-start-1 col-span-6   border-b-[1px]  border-gray-300 md:p-[2rem] p-[1rem] mt-[2rem]'>
                       <div className="grid md:grid-cols-5 ">
-                        <div className="col-start-1 ">
-                        <ul className="font-para text-[1.5rem] xl:p-[2rem] p-[1rem] sm:block hidden">
+                        <div className="col-start-1 sticky ">
+                        <ul className="font-para text-[1.5rem] pt-[30px] p-[1rem] sm:block hidden">
                           <NavLink><li id="lineY" >HISTORY</li></NavLink>
                           <NavLink><li id="lineY">MISSION & VISSION</li></NavLink>
                           <NavLink><li id="lineY">LEADERS</li></NavLink>
                         </ul>
                         </div>
-                        <div className="col-start-2 lg:col-span-3 col-span-4  pb-[2rem]  xl:px-[4rem] ">
-                          <h1 className="font-title 2xl:text-[6rem] text-[4rem] ">WELCOME TO DATA CENTER</h1>
+                        <div className="col-start-2 lg:col-span-3 col-span-4  pb-[2rem]  xl:px-[2rem] ">
+                          <h1 className="font-title 2xl:text-[5rem] text-[4rem] ">WELCOME TO DATA CENTER</h1>
                           <p className="font-para text-[1.2rem]">Founded in 1960 by visionary educators who sought to create an institution dedicated to academic excellence and social progress, Unity University has a rich history rooted in innovation and service. Originally established as a small college with a handful of faculty members and students, Unity University quickly gained recognition for its rigorous academic programs and commitment to nurturing intellectual curiosity and critical thinking skills.
                             <br/>   <br/>
                             In its early years, Unity University faced numerous challenges, from limited resources to societal barriers, yet it persevered with determination and resilience. Through the dedication and hard work of its founders, faculty, and students, the university gradually expanded its offerings and infrastructure, laying the foundation for future growth and success.
@@ -79,7 +79,7 @@ const About = () => {
                     <section  className="col-start-1 col-span-6 border-b-[1px]  border-gray-300 pb-[4rem]">
                       <div className=" grid md:grid-cols-2 p-4 md:p-0">   
                       <div className="relative ">
-                      <div className="md:absolute  bottom-[5rem] -right-10 3xl:ml-[12rem] 2xl:ml-[10rem] lg:ml-[6rem] md:ml-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] bg-white z-50 p-6 font-para"> 
+                      <div className="md:absolute w-full bottom-[5rem] left-10 3xl:mr-[14rem] 2xl:mr-[12rem] lg:mr-[6rem] md:mr-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] bg-white z-50 p-6 font-para"> 
                        <h1 className=" text-[2rem] ">Our Mission</h1>
                       <p className="py-[2rem] ">In the ever-evolving landscape of technology, the data center becomes the crucible where competitive souls are refined into the architects of tomorrow's progress.  In the ever-evolving landscape of technology, the data center becomes the crucible where competitive souls are refined into the architects of tomorrow's progress</p>
                     </div>
@@ -93,7 +93,7 @@ const About = () => {
                      
                       </div>
                       </div>
-                      <div className="grid md:grid-cols-2 p-4 md:p-0">  
+                      <div className="grid md:grid-cols-2 p-4 md:p-0 text-black">  
                      <div className=" relative w-full h-[30rem] mx-auto   lg:pl-[4rem] lg:pt-[4rem] md:p-[2rem]  hidden md:block ">
                       <img
                         src={mission} 

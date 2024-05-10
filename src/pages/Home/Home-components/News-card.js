@@ -29,7 +29,7 @@ const cards = [
 
 const App = () => {
   return (
-    <div className='bg-gray-100 relative   mx-[10px]  lg:mx-[3rem]  xl:mx-[4rem] 2xl:mx-[7rem] pt-[4rem] border-r-[1px] border-l-[1px] border-gray-300 '>
+    <div className='bg-gray-100 relative  mx-[10px]  lg:mx-[1.3rem]  xl:mx-[2rem] 2xl:mx-[4rem] pt-[4rem] border-r-[1px] border-l-[1px] border-gray-300 '>
    
     
             <div class=" w-full mb-3 ">
