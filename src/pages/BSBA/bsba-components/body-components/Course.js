@@ -37,7 +37,7 @@ const CareerOpportunities = ({ title, opportunities }) => (
 
 const CourseDescription = ({Description})=>(
     <section className='sm:px-[3rem] pb-[2rem]'>
-      <h1 className="font-para text-[1.8rem] font-bold text-blue-900 pl-3">Course Description</h1>
+      <h1 className="font-para text-[1.8rem] font-bold text-blue-700 pl-3">Course Description</h1>
         <div>
                {Description.map((description, index) => (
                  <p key={index} className="text-left font-para text-[1.2rem] text-gray-800 p-4">
@@ -96,9 +96,9 @@ const scrollToElement = (id) => {
 
     return ( 
         <>
-        <section className=' mx-[10px]  lg:mx-[3rem]  xl:mx-[4rem] 2xl:mx-[7rem]'> 
-            <div className="relative  lg:py-11 text-gray-700  grid  lg:grid-cols-6 grid-cols-1 lg:gap-4 bg-white border-l-[1px]  border-r-[1px]  border-gray-300"> 
-            <div className=' col-start-1 col-span-6  border-t-[1px]  border-gray-300 md:p-[4rem] p-[1rem] mt-[2rem]'>
+        <section className='mx-[10px]  lg:mx-[2rem]  xl:mx-[3rem] 2xl:mx-[5rem]'> 
+            <div className="relative  lg:py-11 text-gray-700  grid  lg:grid-cols-6 grid-cols-1  bg-white border-l-[1px]  border-r-[1px]  border-gray-300"> 
+            <div className=' col-start-1 col-span-6  border-t-[1px]  border-gray-300  md:p-[4rem] p-[1rem] mt-[2rem]'>
                         <div className='grid lg:grid-cols-2 grid-cols-1 mt-[1rem]'>
                             <div className='w-full h-full'>
                                 <img src={students} className='object-cover w-full h-full'/>
@@ -122,8 +122,8 @@ const scrollToElement = (id) => {
                             
 
                         </div>
-                        <div className='border-b-[8px] border-blue-900 '>
-                             <div className='2xl:mx-[10rem] lg:mx-[5rem] my-[4rem] '>
+                        <div className='border-b-[8px] border-blue-800 '>
+                             <div className='2xl:mx-[7rem] lg:mx-[5rem] my-[4rem] '>
                             <div className='font-para text-[1.2rem]'>
                                 <p className='text-justify'>Welcome to the <span className='text-yellow-600'> Bachelor of Science in Information Technology</span> program at <span className='text-yellow-600'>Data Center!</span> Our program offers a gateway to a world of endless possibilities in the ever-evolving realm of technology. In today's digital age, the demand for skilled IT professionals has never been higher, and our comprehensive curriculum is designed to equip students with the knowledge, skills, and practical experience needed to excel in this dynamic field.Our program provides a solid foundation to pursue diverse career paths in the exciting world of technology.</p>
                                 <div>
@@ -147,7 +147,7 @@ const scrollToElement = (id) => {
                         
                     </div>
                 <div id='id1'    className=' col-start-1 col-end-3 ml-[4rem]' > 
-                    <div className='sticky hidden lg:block top-[6rem] bg-blue-950 p-4 py-11 rounded-xl  '  >
+                    <div className='sticky hidden lg:block top-[6rem] bg-blue-800 p-4 py-11 rounded-xl  '  >
             
                     <div className='3xl:ml-[4rem] ml-[2rem]' >
                         <h1 className={`font-title 2xl:text-[2.5rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
@@ -163,7 +163,7 @@ const scrollToElement = (id) => {
                     </div> 
                 </div>  
                 <div  className='lg:col-start-3 col-start-1 col-span-5 '>
-                    <div className='sticky top-[4rem] lg:hidden  bg-blue-950 p-4 py-6 z-10'>
+                    <div className='sticky top-[4rem] lg:hidden  bg-blue-800  p-4 py-6 z-10'>
                         <div className='flex  justify-center'>
                             <h1 className={`font-title sm:text-[2rem] text-[1.3rem] cursor-pointer text-gray-600 flex items-center ${isOpenweb ? 'underline decoration-yellow-400 text-white' : ''}`} onClick={handleClick}>
                                 <BiSolidRightArrow className={`mr-2 ${isOpenweb ? 'text-yellow-400' : 'text-blue-950'}`} size={iconSize1} />Web Application
@@ -225,7 +225,7 @@ const scrollToElement = (id) => {
                 <div className=' border-t-[8px] border-blue-800 w-full'>
                     <div className='p-[4rem]  my-[2rem] '>
                         <div >
-                              <h1 className='font-para text-[2rem] flex justify-center text-blue-600 font-semibold'>Ready to take the next step?</h1>
+                              <h1 className='font-para text-[2rem] flex justify-center text-blue-800 font-semibold'>Ready to take the next step?</h1>
                               <p className='mx-auto font-para text-[1.3rem] text-center py-[2rem] max-w-[70%]'>Join us as we explore the boundless opportunities and benefits that await you in the Bachelor of Science in Information Technology program at Data Center.</p>
                        </div>
                       <div className='flex justify-center gap-4'> 

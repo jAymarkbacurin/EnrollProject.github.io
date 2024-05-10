@@ -90,7 +90,7 @@ const Academics = () => {
         <h1 className='font-title text-[3rem] text-white lg:text-[3rem]'>CHED COURSES</h1>
       </section> 
       
-      <section className='grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 2xl:gap-8 gap-2 '>
+      <section className='grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 2xl:gap-6 gap-2 '>
           {[
               { id: 'bsba', imgSrc: BA, label: 'BA', name: 'Business Administration', to: '/Bachelor of Science in Business Administration' },
               { id: 'bsit', imgSrc: IT, label: 'IT', name: 'Information Technology', to: '/Bachelor of Science in Information Technology' },
@@ -120,7 +120,7 @@ const Academics = () => {
                       </div>
                   </section>
                   <div className=''>
-                      <div className='md:px-9 border-t-[10px] border-blue-900 group-hover:border-yellow-500 p-4 font-semititle'>
+                      <div className='md:px-6 border-t-[10px] border-blue-900 group-hover:border-yellow-500 py-4 font-semititle'>
                           <div className={` p-4 transition-all duration-300 ease-in-out w-full`}>
                               <NavLink to={item.to} onClick={scrollToTop}>
                                   <h1 className='flex cursor-pointer text-[1.3rem] font-title text-gray-400 group-hover:text-white group-hover:underline decoration-2 decoration-yellow-500 tracking-wide'>

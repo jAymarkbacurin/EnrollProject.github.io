@@ -21,39 +21,32 @@ const Learning = () => {
     return (  
         <div className='  bg-gray-100 '>
             {/* First Section */}
-            <section className='border-l-[1px] border-r-[1px]  border-gray-300 grid lg:py-[4rem] py-[2rem] grid-cols-1 lg:grid-cols-2 mx-[10px]  lg:mx-[1.3rem]  xl:mx-[2rem] 2xl:mx-[4rem]  justify-self-center '>
-               
-          
-                    <div className='p-4 border-t-[1px]  border-b-[1px] flex  items-center   '>
-                        <section className='border-gray-300 p-[2rem]'>
-                             <h1 className='lg:text-[4rem] text-[2.7rem]    font-title text-blue-800 '>
-                        Future-Oriented Education
-                        <hr className='border-[4px] border-yellow-500 w-[10rem]'/>
-                    </h1>
-                    <div className='   2xl:mt-[1.5rem] md:text-[1.4rem] font-para md:text-left text-gray-600'> 
-                        <p className='md:mb-4 mb-1'>
-                           
-                            At DCCP, we believe in nurturing a vibrant community where every individual's potential is unlocked and celebrated. Our dedication to academic excellence serves as the cornerstone of our institution, guiding our students to reach new heights of achievement and intellectual growth. Through a culture of innovation, we empower our community to push boundaries, explore new ideas, and shape the future.
-                        </p>
-                        <div className='flex lg:mt-16 2xl:py-[1rem] py-6 font-title tracking-wide '> 
-                            <div className=''> <div className=' cursor-pointer bg-blue-800 border-blue-800  border-2 p-4 md:px-10 text-white md:text-[1.3rem] hover:border-blue-700 hover:bg-blue-700 hover:-translate-y-1 transition ease-in-out delay-150  '> <h1>LEARN MORE</h1></div></div>
-                            <div className='ml-4'><div className='cursor-pointer border-blue-800  border-2 p-4 md:px-10 text-blue-800 md:text-[1.3rem] flex hover:bg-blue-700 hover:text-white hover:-translate-y-1 transition ease-in-out delay-150 '><h1>CONTACT US</h1></div></div>
-                       
-                        </div>
-                       
-                    </div> 
-                    </section>
-                   
-                </div>
-            
-                
-     
-                    <div className='3xl:h-[40rem] md:h-full h-[34rem]  w-full border-t-[1px] border-b-[1px] border-gray-300'>
-                    <img src={Gallery} alt='Your Image' className='object-cover w-full h-full p-[2rem] ' />
+            <section className='border-l-[1px] border-r-[1px] border-t-[1px]  border-b-[1px]  border-gray-300 grid  lg:py-[4rem] py-[2rem]  mx-[10px]  lg:mx-[1.3rem]  xl:mx-[2rem] 2xl:mx-[4rem]  justify-self-center '>
+                 <div className='grid-cols-1 lg:grid-cols-2 grid  border-t-[1px]  border-b-[1px]  border-gray-300 2xl:py-[2rem]'>
+                    <div className='p-4  flex  items-center '>
+                            <section className='border-gray-300 lg:p-[2rem]'>
+                                <h1 className='lg:text-[4rem] text-[2.7rem] font-title text-blue-800 '>
+                            Future-Oriented Education
+                            <hr className='border-[4px] border-yellow-500 w-[10rem]'/>
+                        </h1>
+                        <div className='   2xl:mt-[1.5rem] md:text-[1.4rem] font-para md:text-left text-gray-600'> 
+                            <p className='md:mb-4 mb-1'>
+                            
+                                At DCCP, we believe in nurturing a vibrant community where every individual's potential is unlocked and celebrated. Our dedication to academic excellence serves as the cornerstone of our institution, guiding our students to reach new heights of achievement and intellectual growth. Through a culture of innovation, we empower our community to push boundaries, explore new ideas, and shape the future.
+                            </p>
+                            <div className='flex lg:mt-16 2xl:py-[1rem] py-6 font-title tracking-wide '> 
+                                <div className=''> <div className=' cursor-pointer bg-blue-800 border-blue-800  border-2 p-4 md:px-10 text-white md:text-[1.3rem] hover:border-blue-700 hover:bg-blue-700 hover:-translate-y-1 transition ease-in-out delay-150  '> <h1>LEARN MORE</h1></div></div>
+                                <div className='ml-4'><div className='cursor-pointer border-blue-800  border-2 p-4 md:px-10 text-blue-800 md:text-[1.3rem] flex hover:bg-blue-700 hover:text-white hover:-translate-y-1 transition ease-in-out delay-150 '><h1>CONTACT US</h1></div></div>
+                            </div>
+                        </div> 
+                        </section>
+                    
                     </div>
-            
-
-
+                    <div className='3xl:h-[40rem] md:h-full h-[24rem]  w-full  '>
+                        <img src={Gallery} alt='Your Image' className='object-cover w-full h-full lg:p-[2rem] ' />
+                        </div>
+                    </div>
+                 
             </section>
 
             {/* Second Section */}
