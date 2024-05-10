@@ -5,7 +5,6 @@
     import TopicsWebcovered from './majors-components/WebDev-card-topics';
     import { FaCheck } from "react-icons/fa6";
     import students from '../ITimage/Bsit-course-images/IT-images.jpg';
-    import TreesBg from '../ITimage/Bsit-course-images/trees.jpg';
     import { PiArrowCircleRightThin } from "react-icons/pi";
     import Faculty from './majors-components/Bsit-faculty';
     import Requirements from '../../../../components/asset/requirements';

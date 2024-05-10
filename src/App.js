@@ -2,7 +2,7 @@
 import './App.css';
 import { BrowserRouter , Routes, Route} from 'react-router-dom'
 import Home from './pages/Home/home'
-import About from './pages/about'
+import About from './pages/about/about'
 import Connect from './pages/connect'
 import NoPage from './pages/noPage'
 import Academics from './pages/academics/academics'
