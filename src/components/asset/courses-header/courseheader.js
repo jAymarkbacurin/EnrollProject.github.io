@@ -81,8 +81,8 @@ const CoursesHeader = () => {
                                   
                                     )}
                                 </div>
-                                <li className="mx-4 text-[1.5rem]">About</li>
-                                <li className="mx-4 text-[1.5rem]">Contacts</li>
+                                <NavLink to="/about" onClick={scrollToTop}><li className="mx-4 text-[1.5rem]">About</li></NavLink>
+                                <NavLink to="/connect" onClick={scrollToTop}><li className="mx-4 text-[1.5rem]">Contacts</li></NavLink>
                             </ul>
                         </div>
                     </section>

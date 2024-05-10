@@ -121,15 +121,15 @@ const Header = () => {
                             <NavLink to="/academics" className='block px-4 py-2 text-blue-800 text-[1.4rem] font-medium font-title'>
                                 UNDERGRADUATE PROGRAMMES
                             </NavLink>
-                            <hr className="border-yellow-300 my-2 border-1"/>
-                            <NavLink smooth to='/bsba' id='lineY' className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>
+                            <hr className="border-yellow-300 my-2 border-1 "/>
+                            <NavLink smooth to='/Bachelor of Science in Business Administration' id='lineY' className='block font-para px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>
                                 (BSBA) Bachelor of Science in Business Administration
                             </NavLink>
-                            <NavLink smooth to='/bsit' id='lineY' className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>
+                            <NavLink smooth to='/Bachelor of Science in information Technology' id='lineY' className='block font-para px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>
                                 (BSIT) Bachelor of Science in Information Technology
                             </NavLink>
-                            <NavLink smooth to='/bshm' id='lineY'  className='block px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>
-                                (BSHM) Bachelor of Science in Hotel Management
+                            <NavLink smooth to='/Bachelor of Science in Hospitality Management' id='lineY'  className='block font-para px-4 py-2 text-gray-800 hover:text-blue-800 font-semibold'>
+                                (BSHM) Bachelor of Science in Hospitality Management
                             </NavLink>
                         </div>
                     </li>
@@ -188,13 +188,13 @@ const Header = () => {
                                     <NavLink to="/academics" id='lineY' className=" mb-3 font-semititle  flex text-[18px] text-white" onClick={closeMenu}> 
                                         UNDERGRADUATE PROGRAMMES <FaArrowRight className='ml-2 mt-[2px] text-gray-600'/>
                                     </NavLink>
-                                    <HashLink smooth to='/academics/#bsba'  id='lineY' className="ml-2  font-semititle  flex text-[15px] text-white mt-1" onClick={closeMenu}>
+                                    <HashLink smooth to='/Bachelor of Science in Business Administration'  id='lineY' className="ml-2  font-para flex text-[15px] text-white mt-1" onClick={closeMenu}>
                                         Bachelor of Science in Business Administration
                                     </HashLink>
-                                    <HashLink smooth to='/academics/#bsit'   id='lineY' className="mb-3 ml-2 font-semititle  flex text-[15px] text-white mt-1" onClick={closeMenu}>
+                                    <HashLink smooth to='/Bachelor of Science in Information Technology'   id='lineY' className="mb-3 ml-2 font-para  flex text-[15px] text-white mt-1" onClick={closeMenu}>
                                         Bachelor of Science in Information Technology
                                     </HashLink>
-                                    <HashLink smooth to='/academics/#bshm'  id='lineY' className="mb-3 ml-2  font-semititle  flex text-[15px] text-white mt-1" onClick={closeMenu}>
+                                    <HashLink smooth to='/Bachelor of Science in Hotel Management'  id='lineY' className="mb-3 ml-2  font-para flex text-[15px] text-white mt-1" onClick={closeMenu}>
                                         Bachelor of Science in Hotel Management
                                     </HashLink>
                                 </div>
