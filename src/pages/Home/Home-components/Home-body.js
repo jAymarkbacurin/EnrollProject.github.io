@@ -18,6 +18,7 @@ const Learning = () => {
         });
     };
     
+    
     return (  
         <div className='  bg-gray-100 '>
             {/* First Section */}
@@ -35,8 +36,10 @@ const Learning = () => {
                                 At DCCP, we believe in nurturing a vibrant community where every individual's potential is unlocked and celebrated. Our dedication to academic excellence serves as the cornerstone of our institution, guiding our students to reach new heights of achievement and intellectual growth. Through a culture of innovation, we empower our community to push boundaries, explore new ideas, and shape the future.
                             </p>
                             <div className='flex lg:mt-16 2xl:py-[1rem] py-6 font-title tracking-wide '> 
-                                <div className=''> <div className=' cursor-pointer bg-blue-800 border-blue-800  border-2 p-4 md:px-10 text-white md:text-[1.3rem] hover:border-blue-700 hover:bg-blue-700 hover:-translate-y-1 transition ease-in-out delay-150  '> <h1>LEARN MORE</h1></div></div>
-                                <div className='ml-4'><div className='cursor-pointer border-blue-800  border-2 p-4 md:px-10 text-blue-800 md:text-[1.3rem] flex hover:bg-blue-700 hover:text-white hover:-translate-y-1 transition ease-in-out delay-150 '><h1>CONTACT US</h1></div></div>
+                               <NavLink to='/about' onClick={scrollToTop}> <div className=''> <div className=' cursor-pointer bg-blue-800 border-blue-800  border-2 p-4 md:px-10 text-white md:text-[1.3rem] hover:border-blue-700 hover:bg-blue-700 hover:-translate-y-1 transition ease-in-out delay-150  '>
+                                     <h1>LEARN MORE</h1></div></div></NavLink>
+                                <NavLink to='/connect' onClick={scrollToTop}><div className='ml-4'><div className='cursor-pointer border-blue-800  border-2 p-4 md:px-10 text-blue-800 md:text-[1.3rem] flex hover:bg-blue-700 hover:text-white hover:-translate-y-1 transition ease-in-out delay-150 '>
+                                    <h1>CONTACT US</h1></div></div></NavLink>
                             </div>
                         </div> 
                         </section>

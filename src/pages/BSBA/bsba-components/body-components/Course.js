@@ -190,7 +190,6 @@ const scrollToElement = (id) => {
 
                  <div className='grid grid-cols-1 mt-[1rem]'>
                     <div>
-                  
                             <CareerOpportunities
                                 title="Web Developer Career Opportunities"
                                 opportunities={[

@@ -1,9 +1,9 @@
-import sophia from '../faculty-images/sophia-faculty.jpg';
-import jake from '../faculty-images/jake-faculty.jpg';
-import soren from '../faculty-images/soren-faculty.jpg';
-import zed from '../faculty-images/zed-faculty.jpg';
-import lukkanit from '../faculty-images/lukkanit-faculty.jpg';
-import paul from '../faculty-images/paul-faculty.jpg';
+import sophia from './faculty-images/sophia-faculty.jpg';
+import jake from './faculty-images/jake-faculty.jpg';
+import soren from './faculty-images/soren-faculty.jpg';
+import zed from './faculty-images/zed-faculty.jpg';
+import lukkanit from './faculty-images/lukkanit-faculty.jpg';
+import paul from './faculty-images/paul-faculty.jpg';
 
 
 
