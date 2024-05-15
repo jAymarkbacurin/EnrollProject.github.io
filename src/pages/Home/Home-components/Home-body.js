@@ -49,9 +49,7 @@ const Learning = () => {
                         <img src={Gallery} alt='Your Image' className='object-cover w-full h-full lg:p-[2rem] ' />
                         </div>
                     </div>
-                 
             </section>
-
             {/* Second Section */}
             <section className='grid lg:grid-cols-2 grid-cols-1 bg-blue-900 w-full h-full   '>
                 <div>

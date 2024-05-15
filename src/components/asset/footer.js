@@ -54,9 +54,9 @@ const Footer = () => {
                     <div className='lg:block hidden justify-self-start cursor-pointer text-white     font-title text-[2rem] ml-2'>DCCP</div>
                     <div className='md:justify-self-center justify-self-start'>
                         <ul className='flex mt-2'>
-                            <li className='bg-gray-800 rounded-full p-4 cursor-pointer'><FaFacebookF className='text-white'/></li>
-                            <li className='bg-gray-800 rounded-full p-4 mx-4 cursor-pointer'><MdEmail className='text-white'/></li>
-                            <li className='bg-gray-800 rounded-full p-4 cursor-pointer'><RiMessengerFill className='text-white'/></li>
+                            <li className=' rounded-full p-4 cursor-pointer transition ease-in-out delay-150 bg-blue-900 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-600 duration-300'><FaFacebookF className='text-white'/></li>
+                            <li className='rounded-full p-4 mx-3 cursor-pointer transition ease-in-out delay-150 bg-blue-900 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-600 duration-300'><MdEmail className='text-white'/></li>
+                            <li className='rounded-full p-4 cursor-pointer transition ease-in-out delay-150 bg-blue-900 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-600 duration-300'><RiMessengerFill className='text-white'/></li>
                         </ul>
                     </div>
                     <div className='lg:block hidden justify-self-end font-header mt-2 text-white text-[1.1rem]'>baguio-campus@dccp.edu.ph</div>

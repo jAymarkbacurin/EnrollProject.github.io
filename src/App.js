@@ -9,7 +9,7 @@ import Academics from './pages/academics/academics'
 import BSBA from './pages/BSBA/Bachelor of Science in Business Administration'
 import BSIT from './pages/BSIT/Bachelor of Science in Information Technology'
 import BSHM from './pages/BSHM/Bachelor of Science in Hospitality Management'
-import News from './pages/news'
+import News from './pages/news/news'
 
 function App() {
   return (
