@@ -15,9 +15,9 @@ const TopicDropdown = ({ title, content }) => {
 
   return (
     <section className='flex justify-center '>
-      <div className={`border-t-[2px] border-gray-200 p-4 transition-all duration-300 ease-in-out cursor-pointer w-full ${boxSize}`}>
+      <div className={`border-t-[1px] border-gray-400 p-4 transition-all duration-300 ease-in-out cursor-pointer w-full ${boxSize}`}>
         <div className="flex" onClick={toggleDropdown}>
-          <h1 className="mr-auto ml-[3rem] font-para  lg:text-[1.2rem] text-[1rem]    text-gray-800">{title}</h1>
+          <h1 className="mr-auto ml-[3rem] font-para  lg:text-[1.2rem] text-[1rem]    text-gray-950">{title}</h1>
           <TfiArrowCircleDown 
           size={iconSize} 
           className={isOpen ? 'rotated' : 'not-rotated'} 
@@ -26,7 +26,7 @@ const TopicDropdown = ({ title, content }) => {
         </div>
         {isOpen && (
           <div>
-            <ul className='font-para ml-[5rem] lg:mt-[1rem]'>
+            <ul className='font-para ml-[5rem] lg:mt-[1rem] text-gray-950'>
               {content.map((item, index) => (
                 <li key={index} className='flex'><BsDot/> {item}</li>
               ))}
@@ -51,9 +51,9 @@ const HMtopics = () => {
   return (
     <div className='md:px-[2rem] px-[10px] z-10'>
  
-    <div className='bg-gray-100 py-[1rem] w-full border-t-[10px] lg:border-none border-blue-500  sm:px-[2rem] '>
+    <div className='bg-gray-200 py-[1rem] w-full border-t-[10px] lg:border-none border-blue-500  sm:px-[2rem] '>
         <h1 className='w-full font-para font-bold md:text-[1.8rem] text-[1.5rem] my-8 underline decoration-yellow-600   text-blue-700'>Hospitality Management   </h1>
-          <h1 className=' w-full font-title  text-[1.2rem] my-4  text-gray-800 tracking-widest'> Topics covered in this course include:</h1>
+          <h1 className=' w-full font-title  text-[1.2rem] my-4 text-gray-950 tracking-widest'> Topics covered in this course include:</h1>
           {topics.map((topic, index) => (
             <TopicDropdown key={index} title={topic.title} content={topic.content} />
           ))}

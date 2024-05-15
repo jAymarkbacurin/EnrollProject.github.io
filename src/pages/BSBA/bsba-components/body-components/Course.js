@@ -37,7 +37,7 @@ const CareerOpportunities = ({ title, opportunities }) => (
 
 const CourseDescription = ({Description})=>(
     <section className='sm:px-[3rem] pb-[2rem]'>
-      <h1 className="font-para text-[1.8rem] font-bold text-blue-700 pl-3">Course Description</h1>
+      <h1 className="font-para text-[1.8rem] font-bold text-blue-900 pl-3">Course Description</h1>
         <div>
                {Description.map((description, index) => (
                  <p key={index} className="text-left font-para text-[1.2rem] text-gray-800 p-4">
@@ -105,16 +105,16 @@ const scrollToElement = (id) => {
                             </div>
                             <div className=' font-para px-[2rem] py-[2rem]   bg-gray-100 '>
                                 <h1 className=' font-semibold text-blue-700 sm:text-[2rem] text-[1.7rem]  py-[2rem]'>Bachelor of Science in Information Technology</h1>
-                                <p className='text-[1.1rem] text-gray-800 pb-[2rem]'> Information Technology course, students delve into the fundamentals of computer systems, programming languages, and network technologies, empowering them with the skills necessary to address contemporary technological challenges and innovate in various industries</p>
-                                <div className='grid grid-cols-2 gap-4 font-para pb-[2rem]'>
+                                <p className='text-[1.1rem] text-gray-950 pb-[2rem]'> Information Technology course, students delve into the fundamentals of computer systems, programming languages, and network technologies, empowering them with the skills necessary to address contemporary technological challenges and innovate in various industries</p>
+                                <div className='grid grid-cols-2 gap-4 font-para pb-[2rem] text-gray-950'>
                                   <div className='p-4  border-t-2 border-b-2 border-gray-400 w-full'>
-                                    <h1 className='flex justify-center'>Four years Course </h1>
+                                    <h1 className='flex justify-center '>Four years Course </h1>
                                     </div>
                                     <div className='p-4  border-t-2 border-b-2 border-gray-400 w-full'>
                                     <h1 className='flex justify-center'>Two Semesters per Academic year</h1>
                                     </div>
                                 </div>
-                                <div ref={ref} className='pb-[2rem] cursor-pointer flex'
+                                <div  className='pb-[2rem] cursor-pointer flex'
                                     onClick={() => scrollToElement('id1')}>
                                    <PiArrowCircleRightThin size={iconSize} className='text-yellow-600' />
                                     <h1 id='lineY' className='w-[19rem] font-title tracking-widest text-[1.5rem] mt-[10px] ml-[15px]' >Explore the majors we offer</h1> </div>
@@ -124,7 +124,7 @@ const scrollToElement = (id) => {
                         </div>
                         <div className='border-b-[8px] border-blue-800 '>
                              <div className='2xl:mx-[7rem] lg:mx-[5rem] my-[4rem] '>
-                            <div className='font-para text-[1.2rem]'>
+                            <div className='font-para text-[1.2rem] text-gray-950'>
                                 <p className='text-justify'>Welcome to the <span className='text-yellow-600'> Bachelor of Science in Information Technology</span> program at <span className='text-yellow-600'>Data Center!</span> Our program offers a gateway to a world of endless possibilities in the ever-evolving realm of technology. In today's digital age, the demand for skilled IT professionals has never been higher, and our comprehensive curriculum is designed to equip students with the knowledge, skills, and practical experience needed to excel in this dynamic field.Our program provides a solid foundation to pursue diverse career paths in the exciting world of technology.</p>
                                 <div>
                                     <BenefitsHM
@@ -147,32 +147,26 @@ const scrollToElement = (id) => {
                         
                     </div>
                 <div id='id1'    className=' col-start-1 col-end-3 ml-[4rem]' > 
-                    <div className='sticky hidden lg:block top-[6rem] bg-blue-800 p-4 py-11 rounded-xl  '  >
-            
+                    <div className='sticky hidden lg:block top-[6rem] bg-blue-900 p-4 py-11 rounded-xl  '  >
                     <div className='3xl:ml-[4rem] ml-[2rem]' >
                         <h1 className={`font-title 2xl:text-[2.5rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
                                 <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Hospitality Management
                             </h1>
-                       
-                           
-                            
-                    
-                 
-                     
+
                         </div>
                     </div> 
                 </div>  
                 <div  className='lg:col-start-3 col-start-1 col-span-5 '>
-                    <div className='sticky top-[4rem] lg:hidden  bg-blue-800  p-4 py-6 z-10'>
+                    <div className='sticky top-[4rem] lg:hidden  bg-blue-900  p-4 py-6 z-10'>
                         <div className='flex  justify-center'>
-                            <h1 className={`font-title sm:text-[2rem] text-[1.3rem] cursor-pointer text-gray-600 flex items-center ${isOpenweb ? 'underline decoration-yellow-400 text-white' : ''}`} onClick={handleClick}>
-                                <BiSolidRightArrow className={`mr-2 ${isOpenweb ? 'text-yellow-400' : 'text-blue-950'}`} size={iconSize1} />Web Application
+                        <h1 className={`font-title 2xl:text-[2.5rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
+                            <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Hospitality Management
                             </h1>
                            
                         </div>
                     </div> 
 
-                <div    className="lg:p-2 pt-[1rem]   ">
+                <div  ref={ref}  className="lg:p-2 pt-[1rem] text-gray-950  ">
                                 
                                         <CourseDescription
                                         Description={["Web Application Development Essentials is a comprehensive course designed to provide students with the fundamental knowledge and practical skills required to develop dynamic and interactive web applications. The course covers key concepts, tools, and techniques essential for creating modern web applications that are responsive, secure, and user-friendly.",

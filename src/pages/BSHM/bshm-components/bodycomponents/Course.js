@@ -114,7 +114,7 @@ const scrollToElement = (id) => {
                                     <h1 className='flex justify-center'>Two Semesters per Academic year</h1>
                                     </div>
                                 </div>
-                                <div ref={ref} className='pb-[2rem] cursor-pointer flex'
+                                <div  className='pb-[2rem] cursor-pointer flex'
                                     onClick={() => scrollToElement('id1')}>
                                    <PiArrowCircleRightThin size={iconSize} className='text-yellow-600' />
                                     <h1 id='lineY' className='w-[19rem] font-title tracking-widest text-[1.5rem] mt-[10px] ml-[15px]' >Explore the majors we offer</h1> </div>
@@ -172,15 +172,14 @@ const scrollToElement = (id) => {
                         </div>
                     </div> 
 
-                <div    className="lg:p-2 pt-[1rem]   ">
+                <div ref={ref}   className="lg:p-2 pt-[1rem]   ">
                                 
                                         <CourseDescription
                                         Description={["Web Application Development Essentials is a comprehensive course designed to provide students with the fundamental knowledge and practical skills required to develop dynamic and interactive web applications. The course covers key concepts, tools, and techniques essential for creating modern web applications that are responsive, secure, and user-friendly.",
                                         "Throughout the course, students will learn about web development technologies, including HTML, CSS, JavaScript, and server-side scripting languages such as Python, PHP, or Node.js. They will gain hands-on experience with popular web development frameworks and libraries, such as React.js, Angular, or Vue.js, to build dynamic user interfaces and interactive web experiences."    
                                         ]}
                                         />
-                                   
-                                     
+
                         </div>
 
                         <div >

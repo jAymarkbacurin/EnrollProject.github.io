@@ -101,15 +101,15 @@ const Connect = () => {
           
             <form className="mx-[2.5rem] ">
             <div class="mb-4">
-                <label for="name" class="block text-[1rem] font-para font-medium text-gray-700 mt-4 ">Name</label>
+                <label for="name" class="block text-[1rem] font-para font-medium text-gray-950 mt-4 ">Name</label>
                 <input type="text" id="name" name="name" class="mt-1  block w-full shadow-sm sm:text-sm border-[1px]  border-yellow-500 p-2"/>
             </div>
             <div class="mb-4">
-                <label for="email" class="block text-[1rem] font-para font-medium text-gray-700">Email</label>
+                <label for="email" class="block text-[1rem] font-para font-medium text-gray-950">Email</label>
                 <input type="email" id="email" name="email" class="mt-1 focus:ring-blue-500 focus:border-blue-200 block w-full shadow-sm sm:text-sm border-[1px]  border-yellow-500 p-2"/>
             </div>
             <div class="mb-4">
-                <label for="message" class="block text-[1rem]  font-para font-medium text-gray-700">Message</label>
+                <label for="message" class="block text-[1rem]  font-para font-medium text-gray-950">Message</label>
                 <textarea id="message" name="message" rows="4"  class="mt-1  block w-full shadow-sm sm:text-sm border-[1px]  border-yellow-500 p-4"></textarea>
             </div>
             <div class="flex justify-end">

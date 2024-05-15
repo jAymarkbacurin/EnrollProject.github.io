@@ -118,7 +118,7 @@ const scrollToElement = (id) => {
                                 <h1 className='flex justify-center'>Two Semesters per Academic year</h1>
                                 </div>
                             </div>
-                            <div ref={ref} className='pb-[2rem] cursor-pointer flex'
+                            <div  className='pb-[2rem] cursor-pointer flex'
                                 onClick={() => scrollToElement('id1')}>
                                <PiArrowCircleRightThin size={iconSize} className='text-yellow-600' />
                                 <h1 id='lineY' className='w-[19rem] font-title tracking-widest text-[1.5rem] mt-[10px] ml-[15px]' >Explore the majors we offer</h1> </div>
@@ -176,7 +176,7 @@ const scrollToElement = (id) => {
                     </div>
                 </div> 
 
-            <div    className="lg:p-2 pt-[1rem]   ">
+            <div ref={ref}    className="lg:p-2 pt-[1rem]   ">
                                 {isOpenweb && (
                                     <CourseDescription
                                     Description={["Web Application Development Essentials is a comprehensive course designed to provide students with the fundamental knowledge and practical skills required to develop dynamic and interactive web applications. The course covers key concepts, tools, and techniques essential for creating modern web applications that are responsive, secure, and user-friendly.",
