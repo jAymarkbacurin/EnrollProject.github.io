@@ -16,13 +16,13 @@ const CareerOpportunities = ({ title, opportunities }) => (
         <div className="my-[2rem]">
             <div className="sm:px-[4rem] px-[2rem]">
                 <h1 className="font-para font-bold text-[1.8rem] text-blue-900">{title}</h1>
-                <p className="font-para text-[1.2rem] mt-[1rem]">
+                <p className="font-para text-[1.2rem] mt-[1rem] text-gray-950">
                     This field offers a diverse range of career paths, appealing to individuals with various interests and specialties, including:
                 </p>
                 <div className='flex justify-start w-full'> 
-                    <ul className="font-para text-[1rem] sm:ml-11 my-6 text-gray-800 grid sm:grid-cols-3 grid-cols-1  ">
+                    <ul className="font-para text-[1.1rem] sm:ml-11 my-6 text-gray-800 grid sm:grid-cols-3 grid-cols-1 text-gray-950 ">
                     {opportunities.map((opportunity, index) => (
-                        <li key={index} className=" flex  p-4 border-b-2 border-gray-300  w-full">
+                        <li key={index} className=" flex  p-4 border-b-[1px] border-gray-400  w-full">
                             <FaCheck className="mt-1 text-blue-500 mr-1  " />
                             {opportunity}
                         </li>
@@ -52,9 +52,9 @@ const CourseDescription = ({Description})=>(
  );
  const BenefitsHM = ({title,Benefits}) =>(  
     <>  
-       <h1 className='font-para text-[1.2rem] mt-[2rem]'>{title}</h1>
+       <h1 className='font-para text-[1.2rem] mt-[2rem] text-gray-950 '>{title}</h1>
        <section >
-           <ul className='grid lg:grid-cols-2 grid-cols-1  my-[2rem]'>
+           <ul className='grid lg:grid-cols-2 grid-cols-1  my-[2rem] text-gray-950'>
                {Benefits.map((Benefits, index)=> (
                    <li key={index} className=' flex   w-full'>
                        <FaCheck className="mt-1 text-blue-500 mr-1  " />
@@ -104,7 +104,7 @@ const scrollToElement = (id) => {
                                 <img src={students} className='object-cover w-full h-full'/>
                             </div>
                             <div className=' font-para px-[2rem] py-[2rem]   bg-gray-100 '>
-                                <h1 className=' font-semibold text-blue-700 sm:text-[2rem] text-[1.7rem]  py-[2rem]'>Bachelor of Science in Information Technology</h1>
+                                <h1 className=' font-semibold text-blue-900 sm:text-[2rem] text-[1.7rem]  py-[2rem]'>Bachelor of Science in Information Technology</h1>
                                 <p className='text-[1.1rem] text-gray-950 pb-[2rem]'> Information Technology course, students delve into the fundamentals of computer systems, programming languages, and network technologies, empowering them with the skills necessary to address contemporary technological challenges and innovate in various industries</p>
                                 <div className='grid grid-cols-2 gap-4 font-para pb-[2rem] text-gray-950'>
                                   <div className='p-4  border-t-2 border-b-2 border-gray-400 w-full'>
@@ -146,11 +146,11 @@ const scrollToElement = (id) => {
                        
                         
                     </div>
-                <div id='id1'    className=' col-start-1 col-end-3 ml-[4rem]' > 
+                <div id='id1'   className=' col-start-1 col-end-3 ml-[4rem]' > 
                     <div className='sticky hidden lg:block top-[6rem] bg-blue-900 p-4 py-11 rounded-xl  '  >
                     <div className='3xl:ml-[4rem] ml-[2rem]' >
-                        <h1 className={`font-title 2xl:text-[2.5rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
-                                <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Hospitality Management
+                        <h1 className={`font-title 3xl:text-[2.5rem] 2xl:text-[2.3rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
+                                <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Business Administration
                             </h1>
 
                         </div>
@@ -160,7 +160,7 @@ const scrollToElement = (id) => {
                     <div className='sticky top-[4rem] lg:hidden  bg-blue-900  p-4 py-6 z-10'>
                         <div className='flex  justify-center'>
                         <h1 className={`font-title 2xl:text-[2.5rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
-                            <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Hospitality Management
+                            <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Business Administration
                             </h1>
                            
                         </div>
@@ -182,7 +182,7 @@ const scrollToElement = (id) => {
                      <TopicsHMcovered  />
                         </div>
 
-                 <div className='grid grid-cols-1 mt-[1rem]'>
+                 <div className='grid grid-cols-1 mt-[1rem] '>
                     <div>
                             <CareerOpportunities
                                 title="Web Developer Career Opportunities"
@@ -202,7 +202,7 @@ const scrollToElement = (id) => {
                    
                     </div>
                
-                    <div className='bg-gray-100 mt-[2rem] md:mx-[4rem] '>
+                    <div className='bg-gray-300 mt-[2rem] md:mx-[2rem] '>
                        <Faculty />
                     
                     </div>
@@ -218,7 +218,7 @@ const scrollToElement = (id) => {
                 <div className=' border-t-[8px] border-blue-800 w-full'>
                     <div className='p-[4rem]  my-[2rem] '>
                         <div >
-                              <h1 className='font-para text-[2rem] flex justify-center text-blue-800 font-semibold'>Ready to take the next step?</h1>
+                              <h1 className='font-para text-[2rem] flex justify-center text-blue-900 font-semibold'>Ready to take the next step?</h1>
                               <p className='mx-auto font-para text-[1.3rem] text-center py-[2rem] max-w-[70%]'>Join us as we explore the boundless opportunities and benefits that await you in the Bachelor of Science in Information Technology program at Data Center.</p>
                        </div>
                       <div className='flex justify-center gap-4'> 
