@@ -16,13 +16,13 @@ const CareerOpportunities = ({ title, opportunities }) => (
         <div className="my-[2rem]">
             <div className="sm:px-[4rem] px-[2rem]">
                 <h1 className="font-para font-bold text-[1.8rem] text-blue-900">{title}</h1>
-                <p className="font-para text-[1.2rem] mt-[1rem]">
+                <p className="font-para text-[1.2rem] mt-[1rem] text-gray-950">
                     This field offers a diverse range of career paths, appealing to individuals with various interests and specialties, including:
                 </p>
                 <div className='flex justify-start w-full'> 
-                    <ul className="font-para text-[1rem] sm:ml-11 my-6 text-gray-800 grid sm:grid-cols-3 grid-cols-1  ">
+                    <ul className="font-para text-[1.1rem] sm:ml-11 my-6 text-gray-800 grid sm:grid-cols-3 grid-cols-1 text-gray-950 ">
                     {opportunities.map((opportunity, index) => (
-                        <li key={index} className=" flex  p-4 border-b-2 border-gray-300  w-full">
+                        <li key={index} className=" flex  p-4 border-b-[1px] border-gray-400  w-full">
                             <FaCheck className="mt-1 text-blue-500 mr-1  " />
                             {opportunity}
                         </li>
@@ -37,7 +37,7 @@ const CareerOpportunities = ({ title, opportunities }) => (
 
 const CourseDescription = ({Description})=>(
     <section className='sm:px-[3rem] pb-[2rem]'>
-      <h1 className="font-para text-[1.8rem] font-bold text-blue-700 pl-3">Course Description</h1>
+      <h1 className="font-para text-[1.8rem] font-bold text-blue-900 pl-3">Course Description</h1>
         <div>
                {Description.map((description, index) => (
                  <p key={index} className="text-left font-para text-[1.2rem] text-gray-800 p-4">
@@ -52,9 +52,9 @@ const CourseDescription = ({Description})=>(
  );
  const BenefitsHM = ({title,Benefits}) =>(  
     <>  
-       <h1 className='font-para text-[1.2rem] mt-[2rem]'>{title}</h1>
+       <h1 className='font-para text-[1.2rem] mt-[2rem] text-gray-950 '>{title}</h1>
        <section >
-           <ul className='grid lg:grid-cols-2 grid-cols-1  my-[2rem]'>
+           <ul className='grid lg:grid-cols-2 grid-cols-1  my-[2rem] text-gray-950'>
                {Benefits.map((Benefits, index)=> (
                    <li key={index} className=' flex   w-full'>
                        <FaCheck className="mt-1 text-blue-500 mr-1  " />
@@ -104,17 +104,17 @@ const scrollToElement = (id) => {
                                 <img src={students} className='object-cover w-full h-full'/>
                             </div>
                             <div className=' font-para px-[2rem] py-[2rem]   bg-gray-100 '>
-                                <h1 className=' font-semibold text-blue-700 sm:text-[2rem] text-[1.7rem]  py-[2rem]'>Bachelor of Science in Information Technology</h1>
-                                <p className='text-[1.1rem] text-gray-800 pb-[2rem]'> Information Technology course, students delve into the fundamentals of computer systems, programming languages, and network technologies, empowering them with the skills necessary to address contemporary technological challenges and innovate in various industries</p>
-                                <div className='grid grid-cols-2 gap-4 font-para pb-[2rem]'>
+                                <h1 className=' font-semibold text-blue-900 sm:text-[2rem] text-[1.7rem]  py-[2rem]'>Bachelor of Science in Information Technology</h1>
+                                <p className='text-[1.1rem] text-gray-950 pb-[2rem]'> Information Technology course, students delve into the fundamentals of computer systems, programming languages, and network technologies, empowering them with the skills necessary to address contemporary technological challenges and innovate in various industries</p>
+                                <div className='grid grid-cols-2 gap-4 font-para pb-[2rem] text-gray-950'>
                                   <div className='p-4  border-t-2 border-b-2 border-gray-400 w-full'>
-                                    <h1 className='flex justify-center'>Four years Course </h1>
+                                    <h1 className='flex justify-center '>Four years Course </h1>
                                     </div>
                                     <div className='p-4  border-t-2 border-b-2 border-gray-400 w-full'>
                                     <h1 className='flex justify-center'>Two Semesters per Academic year</h1>
                                     </div>
                                 </div>
-                                <div ref={ref} className='pb-[2rem] cursor-pointer flex'
+                                <div  className='pb-[2rem] cursor-pointer flex'
                                     onClick={() => scrollToElement('id1')}>
                                    <PiArrowCircleRightThin size={iconSize} className='text-yellow-600' />
                                     <h1 id='lineY' className='w-[19rem] font-title tracking-widest text-[1.5rem] mt-[10px] ml-[15px]' >Explore the majors we offer</h1> </div>
@@ -124,7 +124,7 @@ const scrollToElement = (id) => {
                         </div>
                         <div className='border-b-[8px] border-blue-800 '>
                              <div className='2xl:mx-[7rem] lg:mx-[5rem] my-[4rem] '>
-                            <div className='font-para text-[1.2rem]'>
+                            <div className='font-para text-[1.2rem] text-gray-950'>
                                 <p className='text-justify'>Welcome to the <span className='text-yellow-600'> Bachelor of Science in Information Technology</span> program at <span className='text-yellow-600'>Data Center!</span> Our program offers a gateway to a world of endless possibilities in the ever-evolving realm of technology. In today's digital age, the demand for skilled IT professionals has never been higher, and our comprehensive curriculum is designed to equip students with the knowledge, skills, and practical experience needed to excel in this dynamic field.Our program provides a solid foundation to pursue diverse career paths in the exciting world of technology.</p>
                                 <div>
                                     <BenefitsHM
@@ -146,33 +146,27 @@ const scrollToElement = (id) => {
                        
                         
                     </div>
-                <div id='id1'    className=' col-start-1 col-end-3 ml-[4rem]' > 
-                    <div className='sticky hidden lg:block top-[6rem] bg-blue-800 p-4 py-11 rounded-xl  '  >
-            
+                <div id='id1'   className=' col-start-1 col-end-3 ml-[4rem]' > 
+                    <div className='sticky hidden lg:block top-[6rem] bg-blue-900 p-4 py-11 rounded-xl  '  >
                     <div className='3xl:ml-[4rem] ml-[2rem]' >
-                        <h1 className={`font-title 2xl:text-[2.5rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
-                                <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Hospitality Management
+                        <h1 className={`font-title 3xl:text-[2.5rem] 2xl:text-[2.3rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
+                                <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Business Administration
                             </h1>
-                       
-                           
-                            
-                    
-                 
-                     
+
                         </div>
                     </div> 
                 </div>  
                 <div  className='lg:col-start-3 col-start-1 col-span-5 '>
-                    <div className='sticky top-[4rem] lg:hidden  bg-blue-800  p-4 py-6 z-10'>
+                    <div className='sticky top-[4rem] lg:hidden  bg-blue-900  p-4 py-6 z-10'>
                         <div className='flex  justify-center'>
-                            <h1 className={`font-title sm:text-[2rem] text-[1.3rem] cursor-pointer text-gray-600 flex items-center ${isOpenweb ? 'underline decoration-yellow-400 text-white' : ''}`} onClick={handleClick}>
-                                <BiSolidRightArrow className={`mr-2 ${isOpenweb ? 'text-yellow-400' : 'text-blue-950'}`} size={iconSize1} />Web Application
+                        <h1 className={`font-title 2xl:text-[2.5rem] text-[1.5rem] cursor-pointer flex items-center underline decoration-yellow-400 text-white`}  onClick={handleClick}>
+                            <BiSolidRightArrow className={`mr-2  text-yellow-400`} size={iconSize1} />Business Administration
                             </h1>
                            
                         </div>
                     </div> 
 
-                <div    className="lg:p-2 pt-[1rem]   ">
+                <div  ref={ref}  className="lg:p-2 pt-[1rem] text-gray-950  ">
                                 
                                         <CourseDescription
                                         Description={["Web Application Development Essentials is a comprehensive course designed to provide students with the fundamental knowledge and practical skills required to develop dynamic and interactive web applications. The course covers key concepts, tools, and techniques essential for creating modern web applications that are responsive, secure, and user-friendly.",
@@ -188,7 +182,7 @@ const scrollToElement = (id) => {
                      <TopicsHMcovered  />
                         </div>
 
-                 <div className='grid grid-cols-1 mt-[1rem]'>
+                 <div className='grid grid-cols-1 mt-[1rem] '>
                     <div>
                             <CareerOpportunities
                                 title="Web Developer Career Opportunities"
@@ -208,7 +202,7 @@ const scrollToElement = (id) => {
                    
                     </div>
                
-                    <div className='bg-gray-100 mt-[2rem] md:mx-[4rem] '>
+                    <div className='bg-gray-300 mt-[2rem] md:mx-[2rem] '>
                        <Faculty />
                     
                     </div>
@@ -224,7 +218,7 @@ const scrollToElement = (id) => {
                 <div className=' border-t-[8px] border-blue-800 w-full'>
                     <div className='p-[4rem]  my-[2rem] '>
                         <div >
-                              <h1 className='font-para text-[2rem] flex justify-center text-blue-800 font-semibold'>Ready to take the next step?</h1>
+                              <h1 className='font-para text-[2rem] flex justify-center text-blue-900 font-semibold'>Ready to take the next step?</h1>
                               <p className='mx-auto font-para text-[1.3rem] text-center py-[2rem] max-w-[70%]'>Join us as we explore the boundless opportunities and benefits that await you in the Bachelor of Science in Information Technology program at Data Center.</p>
                        </div>
                       <div className='flex justify-center gap-4'> 
