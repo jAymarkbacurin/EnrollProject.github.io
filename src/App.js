@@ -10,6 +10,7 @@ import BSBA from './pages/BSBA/Bachelor of Science in Business Administration'
 import BSIT from './pages/BSIT/Bachelor of Science in Information Technology'
 import BSHM from './pages/BSHM/Bachelor of Science in Hospitality Management'
 import News from './pages/news/news'
+import News1 from './pages/news/news-pages/tree-planting-activities'
 
 function App() {
   return (
@@ -19,12 +20,13 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/home' element={<Home/>}/>
           <Route path='/academics' element={<Academics/>}/>
-          <Route path='/Bachelor of Science in Business Administration' element={<BSBA/>}/>
-          <Route path='/Bachelor of Science in Information Technology' element={<BSIT/>}/>
-          <Route path='/Bachelor of Science in Hospitality Management' element={<BSHM/>}/>
+          <Route path='/Bachelor-of-Science-in-Business-Administration' element={<BSBA/>}/>
+          <Route path='/Bachelor-of-Science-in-Information-Technology' element={<BSIT/>}/>
+          <Route path='/Bachelor-of-Science-in-Hospitality-Management' element={<BSHM/>}/>
           <Route path='/connect' element={<Connect/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/news' element={<News/>}/>
+          <Route path='/news/tree-planting-activities' element={<News1/>}/>
           <Route path='*' element={<NoPage/>}/>
       </Routes>
     </BrowserRouter>
