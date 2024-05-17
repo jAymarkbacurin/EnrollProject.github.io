@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/asset/header'
+import Header from '../../components/asset/courses-header/courseheader'
 import Footer from '../../components/asset/footer'
 import { IoRemoveOutline } from "react-icons/io5";
 import image1 from './news-images/image6.jpg';
@@ -7,40 +7,35 @@ import image2 from './news-images/image7.jpg';
 import image3 from './news-images/mr and ms intrams.jpg';
 import graduate from './news-images/graduate.jpg'
 import Logo from './news-images/finallogo.png'
+import news from './news-images/news.jpg'
 
 import { NavLink } from 'react-router-dom';
 
 const NewsPage = () => {
     return ( 
       <>
-    <section className=" grid md:grid-cols-9 bg-gray-100 ">
-      <section className='relative col-start-1  col-span-9  '>
-      <div className=" absolute w-full h-[30rem] bg-blue-500">
-      <img
-        src={graduate} 
-        alt="Final Logo"
-        className='mr-1 absolute w-full h-full object-cover    '
-       
-      />
-      <div className='absolute w-full h-full bg-gray-200 opacity-90'></div>
-     
-       </div>
- 
-    </section>
-    <section className='col-start-2 col-span-2 z-50 justify-self-center'>
-      asdsad 
-      <div className='relative w-[8rem] h-[8rem] top-[8rem] '>
-        <img
-           src={Logo}
-
-           className='w-full h-full'
-           />
-           </div>
-    </section>
-      
-<div  className='xl:col-start-4 xl:col-span-5 md:col-span-4 z-50  mt-[8rem] my-[4rem] ' >
-       
-        {[
+      < Header />
+      <section className=' grid  lg:py-[4rem] py-[2rem]  mx-[10px]  lg:mx-[1.3rem]  xl:mx-[2rem] 2xl:mx-[4rem]  justify-self-center '>
+      <div className='flex justify-center items-center'>
+        <div>
+        <h1 className='font-title text-[6rem] text-blue-800'>
+          News & Events
+        </h1>
+        <div className='relative max-w-[70rem] h-auto  '>
+          <img 
+          src={news}
+          className=' w-full h-full object-cover '
+          />
+          <div className='absolute top-0 w-full h-full border-yellow-500 border-[1px] m-[18px] '></div>
+        </div>
+        </div>
+      </div>
+     <section className='grid-cols-1 lg:grid-cols-9 grid   2xl:py-[2rem]'>
+      <div className='col-start-2 col-span-4'>
+asdd
+      </div>
+      <div className=' col-start-4 col-span-5'>
+       {[
             {
             title: 'TREE PLANTING ACTIVITIES', 
             text: 'Roots of Change: A Students Journey in Tree Planting', 
@@ -100,8 +95,9 @@ const NewsPage = () => {
 
         </section>
         ))}
-    </div>
-    </section>
+        </div>
+        </section>
+        </section>
 <Footer/>
     </>
    
